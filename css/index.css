@@ -26,6 +26,25 @@
     font-family: zurchn-regular;
     src: url('../fonts/zurchn.ttf');
 }
+
+
+/* Hide scrollbar for all browsers */
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+
+#scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5px; /* Thickness */
+    height: 0%; /* Now height will change, not width */
+    background-color: #C59C3D; /* Your main color */
+    z-index: 9999;
+    transition: height 0.25s ease-out;
+}
+
 .hero-bg-img{
     width: 100%;
     height: 90vh;
@@ -363,7 +382,7 @@ select:focus{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: zurchk-bold;
+    font-family: zurchn-regular;
     text-transform: uppercase;
     font-size: 50px;
     color: #2F345B;
@@ -394,8 +413,9 @@ select:focus{
     width: 100%;
     height: 8vh;
     background-color:#2F345B;
-    font-family: zurchk-bold;
+    font-family: zurchn-regular;
     font-size: 45px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
@@ -470,7 +490,14 @@ select:focus{
 .services-left-angle{
     font-size: 50px;
     font-weight: bold;
+    display: none;
 }
+
+/* When hovering over the main div, show the arrows */
+.services-main-div:hover .services-left-angle {
+    display: block;
+}
+
 .services-div{
     width: 80%;
     height: 100%;
@@ -522,6 +549,15 @@ select:focus{
     border-radius: 20px;
     display: flex;
     align-items: flex-end;
+}
+
+/* Target the heading inside services-text-box when hovering */
+.services-text-box:hover {
+    background-color: #2F345B; /* New background on hover */
+}
+
+.services-text-box:hover .services-heading {
+    color: #f2cd74; /* New heading color on hover */
 }
 .services-text-box-div{
     width: 100%;
@@ -576,3 +612,8 @@ select:focus{
     transform: rotate(45deg);
     border-radius: 2px;
 }
+/* Active dot color */
+.services-dots .dot-1.active {
+    background-color: #2F345B; /* active color */
+}
+
