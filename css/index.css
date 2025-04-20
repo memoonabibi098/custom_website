@@ -38,11 +38,11 @@ html::-webkit-scrollbar {
     position: fixed;
     top: 0;
     right: 0;
-    width: 5px; /* Thickness */
+    width: 6px; /* Thickness */
     height: 0%; /* Now height will change, not width */
     background-color: #C59C3D; /* Your main color */
-    z-index: 9999;
-    transition: height 0.25s ease-out;
+    z-index: 999999;
+    transition: height 0.4s ease-out;
 }
 
 .hero-bg-img{
@@ -315,6 +315,9 @@ select:focus{
     background-color: #c59c3d;
     border-radius: 15px;
 }
+.choose-us-benefit-ul-li:hover{
+    box-shadow: 0px 0px 8px 1px #2F345B;
+}
 .choose-us-benefit-ul-li-div{
     width: 100%;
     height: 100%;
@@ -437,12 +440,25 @@ select:focus{
     align-items: center;
     justify-content: space-around;
 }
+.sponsor-1-01{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .sponsor-1-1{
-    width: 45%;
+    width: 95%;
     height: 95%;
     background-color: #c59c3d;
     border-radius: 15px;
     display: flex;
+}
+.sponsor-1-1:hover , .sponsor-1-2:hover{
+    width: 97%;
+    height: 97%;
+    box-shadow: 0px 0px 8px 1px #2F345B;
+    transition-duration: 1s;
 }
 .sponsor-1-1-img{
     width: 20%;
@@ -458,7 +474,7 @@ select:focus{
     width: 75%;
 }
 .sponsor-1-2{
-    width: 45%;
+    width: 95%;
     height: 95%;
     background-color: #c59c3d;
     border-radius: 15px;
@@ -507,7 +523,7 @@ select:focus{
     align-items: center;
 }
 .services-left{
-    width: 50%;
+    width: 45%;
     height: 100%;
     /* background-color: #f2cd74; */
     display: flex;
@@ -553,11 +569,9 @@ select:focus{
 
 /* Target the heading inside services-text-box when hovering */
 .services-text-box:hover {
-    background-color: #2F345B; /* New background on hover */
-}
-
-.services-text-box:hover .services-heading {
-    color: #f2cd74; /* New heading color on hover */
+    background-color: #f2cd74; /* New background on hover */
+    box-shadow: 0px 0px 12px 1px #2F345B;
+    transition-duration: 1s;
 }
 .services-text-box-div{
     width: 100%;
@@ -566,7 +580,8 @@ select:focus{
 }
 .services-heading{
     color: #2F345B;
-    font-family:zurchk-bold ;
+    font-family:zurchn-regular ;
+    font-weight: bold;
     font-size: 40px;
     text-transform:uppercase;
     text-align: center;
@@ -583,7 +598,7 @@ select:focus{
     line-height: 40px;
 }
 .services-right{
-    width: 50%;
+    width: 45%;
     height: 100%;
     display: flex;
     align-items: center;

@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html >
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./font awesom/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
+<body >
 
     <div id="scroll-progress-bar"></div>
 
@@ -232,7 +232,8 @@
     </div>
     <div class="sponsor">
         <div class="sponsor-1">
-            <div class="sponsor-1-1">
+            <div class="sponsor-1-01">
+              <div class="sponsor-1-1">
                 <div class="sponsor-1-1-img">
                     <img src="./Pictures/DTS.png" alt="" class="sponsor-1-1-img-icon">
                 </div>
@@ -240,7 +241,9 @@
                     <p>Licensed Tour Operator by Department of
                         Tourists Services, Government of Pakistan </p> 
                 </div>
-            </div> 
+            </div>   
+            </div>
+            <div class="sponsor-1-01">
             <div class="sponsor-1-2">
                 <div class="sponsor-1-1-img">
                     <img src="./Pictures/NADRA_logo.png" alt="" class="sponsor-1-1-img-icon">
@@ -249,11 +252,13 @@
                     <p>Registered Tour Operator  with the National
                         Database and Registration Authority (NADRA) </p> 
                 </div>
-            </div>    
+              </div>
+        </div>  
         </div>
     </div>
     <div class="sponsor">
         <div class="sponsor-1">
+            <div class="sponsor-1-01">
             <div class="sponsor-1-1">
                 <div class="sponsor-1-1-img">
                     <img src="./Pictures/pato logo.png" alt="" class="sponsor-1-1-img-icon">
@@ -263,6 +268,8 @@
                         Tour Operators (PATO)  </p> 
                 </div>
             </div> 
+        </div>
+        <div class="sponsor-1-01">
             <div class="sponsor-1-2">
                 <div class="sponsor-1-1-img">
                     <img src="./Pictures/CGI.png" alt="" class="sponsor-1-2-img-icon">
@@ -271,11 +278,13 @@
                     <p>Registered Travel coordinator USTravelDocs
                         (Offcial U.S. Department of State Visa) </p> 
                 </div>
-            </div>    
+            </div> 
+        </div>  
         </div>
     </div>
     <div class="sponsor">
         <div class="sponsor-1">
+            <div class="sponsor-1-01">
             <div class="sponsor-1-1">
                 <div class="sponsor-1-1-img">
                     <img src="./Pictures/cropped-PCJCCI-logo.png" alt="" class="sponsor-1-1-img-icon">
@@ -285,6 +294,8 @@
                         Chamber of Commerce & Industry </p> 
                 </div>
             </div> 
+        </div>
+        <div class="sponsor-1-01">
             <div class="sponsor-1-2">
                 <div class="sponsor-1-1-img">
                     <img src="./Pictures/authortized travel partner 2.png" alt="" class="sponsor-1-1-img-icon">
@@ -293,7 +304,8 @@
                     <p>Authorized Travel Partner for
                         International Exhibitions  </p> 
                 </div>
-            </div>    
+            </div>  
+        </div>  
         </div>
     </div>
     <div class="affiliations">
@@ -361,243 +373,4 @@
 
 
 <script src="./js/index.js"></script>
-<!-- <script>
-    const cards = [
-        {
-            img: "./Pictures/Business Visa.png",
-            heading: "BUSINESS VISA",
-            detail: "Whether to attend a Business Meeting or to participate in an International Exhibition, We ensure you meet all requirements."
-        },
-        {
-            img: "./Pictures/Tourist Visa.png",
-            heading: "TOURIST VISA",
-            detail: "Ready to explore new Destinations? Let us handle the paper work and logistics of securing your tourist visa so you can focus on creating unforgettable travel memories."
-        },
-        {
-            img: "./Pictures/Business Visa.png",
-            heading: "FAMILY VISA",
-            detail: "Visit your loved ones without any hassle. We manage the visa formalities so you can focus on reuniting with your family."
-        },
-        {
-            img: "./Pictures/Tourist Visa.png",
-            heading: "STUDENT VISA",
-            detail: "Your dream of studying abroad is closer than you think. We guide you through the student visa application process smoothly."
-        },
-        {
-            img: "./Pictures/Business Visa.png",
-            heading: "WORK VISA",
-            detail: "Seeking work opportunities overseas? Let us assist you with the visa process and documentation."
-        }
-    ];
-
-    let currentIndex = 0;
-
-    const leftArrow = document.querySelector('.fa-angle-left');
-    const rightArrow = document.querySelector('.fa-angle-right');
-    const servicesLeft = document.querySelector('.services-left');
-    const servicesRight = document.querySelector('.services-right');
-
-    function updateCards() {
-        let leftCardIndex = currentIndex;
-        let rightCardIndex = (currentIndex + 1) % cards.length;
-
-        const leftCard = cards[leftCardIndex];
-        const rightCard = cards[rightCardIndex];
-
-        servicesLeft.querySelector('.services-img').src = leftCard.img;
-        servicesLeft.querySelector('.services-heading').textContent = leftCard.heading;
-        servicesLeft.querySelector('.services-detail').textContent = leftCard.detail;
-
-        servicesRight.querySelector('.services-img').src = rightCard.img;
-        servicesRight.querySelector('.services-heading').textContent = rightCard.heading;
-        servicesRight.querySelector('.services-detail').textContent = rightCard.detail;
-
-        updateDots();
-    }
-
-    leftArrow.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-        updateCards();
-    });
-
-    rightArrow.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % cards.length;
-        updateCards();
-    });
-
-    // Dot Navigation
-    const dotContainer = document.createElement('div');
-    dotContainer.classList.add('dot-container');
-    document.querySelector('.services-main-div').appendChild(dotContainer);
-
-    cards.forEach((_, index) => {
-        const dot = document.createElement('span');
-        dot.classList.add('dot');
-        dot.addEventListener('click', () => {
-            currentIndex = index;
-            updateCards();
-        });
-        dotContainer.appendChild(dot);
-    });
-
-    function updateDots() {
-        const dots = document.querySelectorAll('.dot');
-        dots.forEach((dot, index) => {
-            if (index === currentIndex) {
-                dot.classList.add('active');
-            } else {
-                dot.classList.remove('active');
-            }
-        });
-    }
-
-    // Initialize
-    updateCards();
-</script> -->
-
-
-
-<script>
-
-window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = (scrollTop / docHeight) * 100;
-    document.getElementById('scroll-progress-bar').style.height = scrollPercent + "%";
-});
-
-
-
-
-
-
-
-    const cards = [
-        {
-            img: "./Pictures/Business Visa.png",
-            heading: "BUSINESS VISA",
-            detail: "Whether to attend a Business Meeting or to participate in an International Exhibition, We ensure you meet all requirements."
-        },
-        {
-            img: "./Pictures/Tourist Visa.png",
-            heading: "TOURIST VISA",
-            detail: "Ready to explore new Destinations? Let us handle the paper work and logistics of securing your tourist visa so you can focus on creating unforgettable travel memories."
-        },
-        {
-            img: "./Pictures/NADRA_logo.png",
-            heading: "FAMILY VISA",
-            detail: "Visit your loved ones without any hassle. We manage the visa formalities so you can focus on reuniting with your family."
-        },
-        {
-            img: "./Pictures/DTS.png",
-            heading: "STUDENT VISA",
-            detail: "Your dream of studying abroad is closer than you think. We guide you through the student visa application process smoothly."
-        },
-        {
-            img: "./Pictures/pakistan_association_of_tour_ope.png",
-            heading: "WORK VISA",
-            detail: "Seeking work opportunities overseas? Let us assist you with the visa process and documentation."
-        }
-    ];
-
-    let currentIndex = 0;
-    let autoSlideInterval;
-
-    const leftArrow = document.querySelector('.fa-angle-left');
-    const rightArrow = document.querySelector('.fa-angle-right');
-    const servicesLeft = document.querySelector('.services-left');
-    const servicesRight = document.querySelector('.services-right');
-
-
-    function updateCards() {
-        // 🌟 First reset left card background and text color
-        const leftCardTextBox = document.querySelector('.services-left .services-text-box');
-        const leftCardDetail = document.querySelector('.services-left .services-detail');
-
-      
-        if (leftCardDetail) {
-            leftCardDetail.style.color = "white"; // reset text color
-        }
-
-        // (your existing code for updating images and text)
-        let leftCardIndex = currentIndex;
-        let rightCardIndex = (currentIndex + 1) % cards.length;
-
-        const leftCard = cards[leftCardIndex];
-        const rightCard = cards[rightCardIndex];
-
-        servicesLeft.querySelector('.services-img').src = leftCard.img;
-        servicesLeft.querySelector('.services-heading').textContent = leftCard.heading;
-        servicesLeft.querySelector('.services-detail').textContent = leftCard.detail;
-
-        servicesRight.querySelector('.services-img').src = rightCard.img;
-        servicesRight.querySelector('.services-heading').textContent = rightCard.heading;
-        servicesRight.querySelector('.services-detail').textContent = rightCard.detail;
-
-        updateDots();
-        // animateBackgroundChange(); // 🌟 Apply new background + text color
-    }
-
-
-    leftArrow.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-        updateCards();
-        resetAutoSlide();
-    });
-
-    rightArrow.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % cards.length;
-        updateCards();
-        resetAutoSlide();
-    });
-
-   
-    // Select all your existing dots
-    const dots = document.querySelectorAll('.services-dots .dot-1');
-
-    // Add click event listeners to each dot
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            currentIndex = index;
-            updateCards();
-            resetAutoSlide();
-        });
-    });
-
-    // Update dot active state
-    function updateDots() {
-        const allDots = document.querySelectorAll('.services-dots .dot-1');
-        allDots.forEach((dot, index) => {
-            if (index === currentIndex) {
-                dot.classList.add('active');
-            } else {
-                dot.classList.remove('active');
-            }
-        });
-    }
-
-
-
-    // Auto Slide Function
-    function startAutoSlide() {
-        autoSlideInterval = setInterval(() => {
-            currentIndex = (currentIndex + 1) % cards.length;
-            updateCards();
-        }, 5000); // every 5 seconds
-    }
-
-    function resetAutoSlide() {
-        clearInterval(autoSlideInterval);
-        startAutoSlide();
-    }
-
-    // Initialize
-    updateCards();
-    startAutoSlide();
-</script>
-
-
-
-
-
 </html>
