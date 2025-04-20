@@ -44,7 +44,6 @@ html::-webkit-scrollbar {
     z-index: 999999;
     transition: height 0.4s ease-out;
 }
-
 .hero-bg-img{
     width: 100%;
     height: 90vh;
@@ -228,7 +227,6 @@ html::-webkit-scrollbar {
     top: 15%;
     right: 3%;
 }
-
 .search-div-select-option{
     background-color: #f2cd74;
     width: 80%;
@@ -299,7 +297,6 @@ select:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .choose-us-benefit-ul{
     width: 70%;
@@ -508,12 +505,10 @@ select:focus{
     font-weight: bold;
     display: none;
 }
-
 /* When hovering over the main div, show the arrows */
 .services-main-div:hover .services-left-angle {
     display: block;
 }
-
 .services-div{
     width: 80%;
     height: 100%;
@@ -545,7 +540,6 @@ select:focus{
     position: absolute;
     top: -20%;
     left: 35%;
-    
 }
 .services-img{
     width: 100%;
@@ -566,7 +560,6 @@ select:focus{
     display: flex;
     align-items: flex-end;
 }
-
 /* Target the heading inside services-text-box when hovering */
 .services-text-box:hover {
     background-color: #f2cd74; /* New background on hover */
@@ -631,4 +624,128 @@ select:focus{
 .services-dots .dot-1.active {
     background-color: #2F345B; /* active color */
 }
-
+.exhibitions-left{
+    width: 35%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.exhibitions-img-div{
+    width: 90%;
+    height: 85%;
+    /* background-color: #C59C3D; */
+    border-radius: 20px;
+}
+.exhibitions-img-div img{
+    height: 100%;
+    border-radius: 20px;
+}
+.exhibitions-right{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.exhibitions-text-div{
+    width: 90%;
+    height: 85%;
+    /* background-color: #C59C3D; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.exhibitions-div-logo{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+}
+.exhibitions-div-logo img{
+    height: 70%;
+}
+.exhibitions-div-detail{
+    width: 100%;
+    height: 15%;
+    /* background-color: red; */
+    font-family: zurchn-regular;
+    font-size: 25px;
+    line-height: 40px;
+    text-transform:capitalize ;
+    color: #2F345B;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.exhibitions-div-date{
+    width: 100%;
+    height: 30%;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.exhibitions-div-date i {
+    font-size: 50px;
+    color: #C59C3D;
+}
+.exhibitions-div-date p{
+    box-sizing: border-box;
+    padding-top: 25px;
+    font-family: zurchn-regular;
+    font-size: 40px;
+    color: #2F345B;
+}
+.exhibitions-div-location{
+    width: 100%;
+    height: 30%;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.exhibitions-div-location i {
+    font-size: 50px;
+    color: #C59C3D;
+}
+.exhibitions-div-location p{
+    box-sizing: border-box;
+    padding-top: 25px;
+    font-family: zurchn-regular;
+    font-size: 30px;
+    color: #2F345B;
+    text-align: center;
+}
+.exhibitions-div-slider{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.exhibitions-div-slider p{
+    font-family: zurchn-regular;
+    font-weight: 700;
+    font-size: 30px;
+    color: #2F345B;
+}
+.exhibitions-div-slider-span{
+    color: #f2cd74;
+}
+.exhibitions-div-slider-span-1{
+    color: #C59C3D;
+}
+.exhibitions-slider-line{
+    width: 20%;
+    height: 10%;
+    background-color: #C59C3D;
+}
