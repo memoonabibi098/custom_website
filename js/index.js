@@ -168,3 +168,121 @@ window.addEventListener('scroll', () => {
     // Initialize
     updateCards();
     startAutoSlide();
+  
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Sample data for exhibitions (replace with your actual data)
+    const exhibitionsData = [
+        {
+            logo: "./Pictures/chinaplas 2025.png",
+            image: "./Pictures/image 2.png",
+            detail: "the world's leading plastics and rubber trade fair",
+            date: "2025. 4. 15 - 18",
+            location: "Shenzhen World Exhibition & Convention Center (Bao'an), PR China"
+        },
+        {
+            logo: "./Pictures/Sino-Label.png",
+            image: "./Pictures/Sino-Label-img.png",
+            detail: "The Way For Labeling Industry ",
+            date: "04 - 06 , 03 , 2025",
+            location: "China Import and Export Fair Complex, Guangzhou, China"
+        },
+        {
+            logo: "./Pictures/ites.png",
+            image: "./Pictures/ites-img.png",
+            detail: "Shenzhen International Industrial Manufacturing Technology and Equipment Exhibition",
+            date: "2025. 3. 26 - 29",
+            location: "Shenzhen World Exhibition & Convention Center (PR China)"
+        },
+        {
+            logo: "./Pictures/Sino-Pack.png",
+            image: "./Pictures/Sino-Pack-img.png",
+            detail: "The 31st China International Exhibition on Packaging Machinery and Materials",
+            date: "2025. 3. 4 - 6",
+            location: "China Import & Export Fair Complex, Guangzhou, P.R.China"
+        },
+        {
+            logo: "./Pictures/PRINTING SOUTH CHINA EXPO.png",
+            image: "./Pictures/PRINTING SOUTH CHINA EXPO-img.png",
+            detail: "Smart Packaging Printing ",
+            date: "2025. 3. 4 - 6",
+            location: "China Import and Export Fair Complex, Guangzhou, China"
+        }
+    ];
+
+    // Get DOM elements
+    const leftArrow = document.querySelector('.exhibitions-left-angle.fa-angle-left');
+    const rightArrow = document.querySelector('.exhibitions-left-angle.fa-angle-right');
+    const imgDiv = document.querySelector('.exhibitions-img-div img');
+    const logoDiv = document.querySelector('.exhibitions-div-logo img');
+    const detailDiv = document.querySelector('.exhibitions-div-detail p');
+    const dateDiv = document.querySelector('.exhibitions-div-date p');
+    const locationDiv = document.querySelector('.exhibitions-div-location p');
+    const currentNumberSpan = document.querySelector('.exhibitions-div-slider-span');
+    const totalNumberSpan = document.querySelector('.exhibitions-div-slider-span-1');
+
+    // Set total number of exhibitions
+    totalNumberSpan.textContent = exhibitionsData.length;
+
+    let currentIndex = 0;
+    let autoRotateInterval;
+
+    // Function to update the exhibition display
+    function updateExhibition(index) {
+        const exhibition = exhibitionsData[index];
+        
+        imgDiv.src = exhibition.image;
+        logoDiv.src = exhibition.logo;
+        detailDiv.textContent = exhibition.detail;
+        dateDiv.textContent = exhibition.date;
+        locationDiv.textContent = exhibition.location;
+        currentNumberSpan.textContent = index + 1;
+        
+        currentIndex = index;
+    }
+
+    // Function to move to next exhibition
+    function nextExhibition() {
+        currentIndex = (currentIndex + 1) % exhibitionsData.length;
+        updateExhibition(currentIndex);
+    }
+
+    // Function to move to previous exhibition
+    function prevExhibition() {
+        currentIndex = (currentIndex - 1 + exhibitionsData.length) % exhibitionsData.length;
+        updateExhibition(currentIndex);
+    }
+
+    // Set up auto rotation
+    function startAutoRotate() {
+        autoRotateInterval = setInterval(nextExhibition, 3000);
+    }
+
+    // Initialize
+    updateExhibition(0);
+    startAutoRotate();
+
+    // Event listeners for arrows
+    leftArrow.addEventListener('click', function() {
+        clearInterval(autoRotateInterval);
+        prevExhibition();
+        startAutoRotate();
+    });
+
+    rightArrow.addEventListener('click', function() {
+        clearInterval(autoRotateInterval);
+        nextExhibition();
+        startAutoRotate();
+    });
+
+    // Pause auto rotation when hovering over the exhibition
+    const servicesMainDiv = document.querySelector('.services-main-div');
+    servicesMainDiv.addEventListener('mouseenter', function() {
+        clearInterval(autoRotateInterval);
+    });
+
+    servicesMainDiv.addEventListener('mouseleave', function() {
+        startAutoRotate();
+    });
+});
