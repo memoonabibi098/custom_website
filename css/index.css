@@ -27,6 +27,11 @@
     src: url('../fonts/zurchn.ttf');
 }
 
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Hide scrollbar for all browsers */
 html::-webkit-scrollbar {
@@ -38,24 +43,21 @@ html::-webkit-scrollbar {
     position: fixed;
     top: 0;
     right: 0;
-    width: 6px; /* Thickness */
+    width: 8px; /* Thickness */
     height: 0%; /* Now height will change, not width */
     background-color: #C59C3D; /* Your main color */
     z-index: 999999;
-    transition: height 0.4s ease-out;
+    transition: height 1s ease-out;
 }
 .hero-bg-img{
     width: 100%;
-    height: 90vh;
+    height: 54rem;
     background-image: url(../Pictures/picture-1.jpg);
 }
 .main-div{
     width: 100%;
-    height: 90vh;
+    height: 54rem;
     background-color:hsl(233deg 32% 27% / 50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     position: relative;
 }
@@ -63,8 +65,6 @@ html::-webkit-scrollbar {
     width: 100%;
     height: 10%;
     /* background-color: red; */
-    display: flex;
-    justify-content: center;
     align-items: end;
     position: absolute;
     top: 0px;
@@ -73,25 +73,16 @@ html::-webkit-scrollbar {
     width: 70%;
     height: 70%;
     /* background-color: greenyellow;   */
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .header-left{
     width: 30%;
     height: 100%;
     /* background-color: aqua; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .header-left-box{
     width: 80%;
     height: 100%;
     /* background-color: paleturquoise; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .logo-img{
     width: 100%;
@@ -100,18 +91,12 @@ html::-webkit-scrollbar {
     width: 70%;
     height: 95%;
     background-color: hsl(0deg 0% 100% / 71%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
+    border-radius: 0.75rem;
 }
 .header-right-box{
     width: 80%;
     height: 100%;
     /* background-color: gray; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .header-right-ul{
     width: 100%;
@@ -121,7 +106,7 @@ html::-webkit-scrollbar {
 .header-right-ul-li-a{
     font-family: zurchn-regular;
     font-weight: 600;
-    font-size: 19px;
+    font-size: 1.2rem;
     text-decoration: none;
     color: #2F345B;
     text-transform: capitalize;
@@ -130,41 +115,39 @@ html::-webkit-scrollbar {
     width: 20%;
     height: 100%;
     /* background-color: red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .header-right-btn{
     font-family: zurchn-regular;
     font-weight:500;
-    font-size: 18px;
+    font-size: 1.2rem;
     color: white;
     text-transform: capitalize;
     background-color: #2F345B;
     border: none;
-    border-radius: 15px;
-    height: 45px;
-    width: 135px;
+    border-radius: 0.75rem;
+    height: 2.5rem;
+    width: 9rem;
 }
 .main-div-p{
     font-family: zurchn-regular;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: white;
     text-transform: capitalize;
 }
 .search-bar-div{
     width: 100%;
-    height: 10vh;
+    height: 6rem;
     /* background: #000; */
     position: relative;
 }
 .search-lable-div{
-    width: 70%;
+    width: 58%;
     height: 30%;
     /* background-color: rebeccapurple; */
     position: absolute;
     top: -55%;
-    left: 15%;
+    left: 20%;
+    justify-content: start;
 }
 .search-lable{
     width: 71.5%;
@@ -174,30 +157,28 @@ html::-webkit-scrollbar {
 .search-lable-ul{
     width: 100%;
     height: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0px 10px;
+    padding: 0px 0px 0px 10px;
     box-sizing: border-box;
+    display: flex;
 }
 .search-lable-ul-li{
     font-family:zurchn-regular ;
-    font-size: 18px;
+    font-size: 1.3rem;
     color: white;
     text-transform: capitalize;
 }
 .search-div{
-    width: 75%;
+    width: 60%;
     height: 55%;
     background-color: #f2cd74;
     position: absolute;
     top: -25%;
-    left: 15%;
-    border-radius: 15px;
-    display: flex;
+    left: 20%;
+    border-radius: 0.75rem;
     justify-content: space-between;
-    align-items: center;
-    justify-content: center;
+
 }
 .search-div-patition{
     width: 30%;
@@ -215,17 +196,17 @@ html::-webkit-scrollbar {
     color: #2F345B;
     font-family:zurchn-regular;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.25rem;
     text-transform: capitalize;
      appearance: none;
     -webkit-appearance: none;
 }
 .select-option-create-down{
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #c59c3d;
     position: absolute;
     top: 15%;
-    right: 3%;
+    right: 10%;
 }
 .search-div-select-option{
     background-color: #f2cd74;
@@ -248,45 +229,37 @@ select:focus{
     font-family:zurchn-regular ;
     font-size: 25px;
     text-transform: capitalize;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0px 0.75rem 0.75rem 0px;
 }
 .choose-us-div{
     width: 100%;
-    height: 80vh;
+    height: 40rem;
     /* background-color: rebeccapurple; */
     background-image: url(../Pictures/map.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .choose-us-heading{
     width: 100%;
     height: 20%;
+    flex-direction: column;
     /* background-color: red; */
 }
 .choose-us-heading-div{
     width: 100%;
     height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family:zurchk-bold ;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #2F345B;
     text-transform: uppercase;
 }
 .choose-us-p-div{
     width: 100%;
     height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: zurchn-regular;
-    font-size: 25px;
+    font-size: 1.5rem;
     color: #2F345B;
     text-transform: capitalize;
 }
@@ -294,9 +267,6 @@ select:focus{
     width: 100%;
     height: 60%;
     /* background-color: black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .choose-us-benefit-ul{
     width: 70%;
@@ -310,7 +280,7 @@ select:focus{
     width: 20%;
     height: 100%;
     background-color: #c59c3d;
-    border-radius: 15px;
+    border-radius: 1rem;
 }
 .choose-us-benefit-ul-li:hover{
     box-shadow: 0px 0px 8px 1px #2F345B;
@@ -319,19 +289,13 @@ select:focus{
     width: 100%;
     height: 100%;
     /* background-color: rebeccapurple; */
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .choose-us-img{
     width: 100%;
     height: 20%;
     /* background: #000; */
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .choose-us-img-icon{
     height: 100%;
@@ -340,10 +304,7 @@ select:focus{
     width: 100%;
     height: 25%;
     /* background: #000; */
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-family:zurchl-light;
     font-weight: bold;
     letter-spacing: 1px;
@@ -354,11 +315,8 @@ select:focus{
     width: 85%;
     height: 20%;
     /* background: #000; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: zurchn-regular;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 0px;
     line-height: 30px;
     color: white;
@@ -368,40 +326,34 @@ select:focus{
     width: 80%;
     height: 20%;
     /* background-color: aqua; */
-    display: flex;
     justify-content: space-evenly;
 }
 .choose-us-counter-div-1{
     width: 17%;
-    height: 100%;
+    height: 70%;
+    flex-direction: column;
     /* background: red; */
 }
 .choose-us-counter-div-1-1{
     width: 100%;
     height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: zurchn-regular;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 3rem;
     color: #2F345B;
 }
 .choose-us-counter-div-1-2{
     width: 100%;
     height: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: zurchn-regular;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 1.3rem;
     color: #2F345B;
 }
 .star-cls {
     background-color: #2F345B;
     color: white;
-    font-size: 20px;
+    font-size: 1.3rem;
     width: 30px;           
     height: 30px;             
     line-height: 30px;        
@@ -411,45 +363,33 @@ select:focus{
   }
 .affiliations{
     width: 100%;
-    height: 8vh;
+    height: 5rem;
     background-color:#2F345B;
     font-family: zurchn-regular;
-    font-size: 45px;
+    font-size: 2.8rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
 }
 .sponsor{
     width: 100%;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 9rem;
 }
 .sponsor-1{
     width: 80%;
     height: 80%;
     /* background-color:rgb(43, 226, 186); */
-    display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 .sponsor-1-01{
     width: 50%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .sponsor-1-1{
     width: 95%;
     height: 95%;
     background-color: #c59c3d;
     border-radius: 15px;
-    display: flex;
 }
 .sponsor-1-1:hover , .sponsor-1-2:hover{
     width: 97%;
@@ -460,9 +400,6 @@ select:focus{
 .sponsor-1-1-img{
     width: 20%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .sponsor-1-1-img-icon{
     height: 80%;
@@ -475,9 +412,6 @@ select:focus{
     height: 95%;
     background-color: #c59c3d;
     border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .sponsor-1-1-text{
     width: 80%;
@@ -486,19 +420,14 @@ select:focus{
     font-size: 17px;
     text-transform: capitalize;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 3vh;
+    line-height:2rem;
     text-align: center;
     padding-right: 10px;
 }
 .services-main-div{
     width: 100%;
-    height: 70vh;
+    height: 40rem;
     /* background-color: rebeccapurple; */
-    display: flex;
-    justify-content: center;
 }
 .services-left-angle{
     font-size: 50px;
@@ -513,23 +442,16 @@ select:focus{
     width: 80%;
     height: 100%;
     /* background-color: green; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .services-left{
     width: 45%;
     height: 100%;
     /* background-color: #f2cd74; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .services-left-box{
     width: 90%;
     height: 100%;
     /* background: red; */
-    display: flex;
     flex-direction: column;
     justify-content:end;
 }
@@ -538,7 +460,7 @@ select:focus{
     height: 30%;
     /* background-color: gray; */
     position: absolute;
-    top: -20%;
+    top: -12%;
     left: 35%;
 }
 .services-img{
@@ -559,7 +481,9 @@ select:focus{
     border-radius: 20px;
     display: flex;
     align-items: flex-end;
+    box-sizing: border-box;
 }
+
 /* Target the heading inside services-text-box when hovering */
 .services-text-box:hover {
     background-color: #f2cd74; /* New background on hover */
@@ -569,13 +493,15 @@ select:focus{
 .services-text-box-div{
     width: 100%;
     height: 70%;
+    flex-direction: column;
+    justify-content: flex-start;
     /* background-color: red; */
 }
 .services-heading{
     color: #2F345B;
     font-family:zurchn-regular ;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-transform:uppercase;
     text-align: center;
     box-sizing: border-box;
@@ -593,25 +519,18 @@ select:focus{
 .services-right{
     width: 45%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     /* background-color: #c59c3d; */
 }
 .services-dots-div{
     width: 100%;
     height: 5vh;
     /* background-color: green; */
-    display: flex;
-    justify-content: center;
 }
 .services-dots{
     width: 10%;
     height: 100%;
     /* background-color: red; */
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .dot-1{
     width: 15px;
@@ -628,9 +547,6 @@ select:focus{
     width: 35%;
     height: 100%;
     /* background-color: green; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .exhibitions-img-div{
     width: 90%;
@@ -646,25 +562,17 @@ select:focus{
     width: 50%;
     height: 100%;
     /* background-color: red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .exhibitions-text-div{
     width: 90%;
     height: 85%;
     /* background-color: #C59C3D; */
     border-radius: 20px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .exhibitions-div-logo{
     width: 100%;
     height: 15%;
-    display: flex;
-    justify-content: center;
 }
 .exhibitions-div-logo img{
     height: 70%;
@@ -674,23 +582,17 @@ select:focus{
     height: 15%;
     /* background-color: red; */
     font-family: zurchn-regular;
-    font-size: 25px;
+    font-size: 1.6rem;
     line-height: 40px;
     text-transform:capitalize ;
     color: #2F345B;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .exhibitions-div-date{
     width: 100%;
     height: 30%;
     /* background-color: gray; */
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .exhibitions-div-date i {
     font-size: 50px;
@@ -700,17 +602,14 @@ select:focus{
     box-sizing: border-box;
     padding-top: 25px;
     font-family: zurchn-regular;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #2F345B;
 }
 .exhibitions-div-location{
     width: 100%;
     height: 30%;
     /* background-color: gray; */
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .exhibitions-div-location i {
     font-size: 50px;
@@ -726,14 +625,12 @@ select:focus{
 }
 .exhibitions-div-slider{
     width: 100%;
-    height: 7vh;
-    display: flex;
+    height: 3rem;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-end;
 }
 .exhibitions-left-angle{
-    font-size: 50px;
+    font-size: 3.1rem;
     font-weight: bold;
     display: none;
 }
@@ -744,7 +641,7 @@ select:focus{
 .exhibitions-div-slider p{
     font-family: zurchn-regular;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.7rem;
     color: #2F345B;
 }
 
@@ -794,9 +691,6 @@ select:focus{
     width: 100%;
     height: 10vh;
     /* background-color: red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .full-line{
     width: 100%;
@@ -807,13 +701,11 @@ select:focus{
   width: 100%;
   height: 55vh;
   /* background-color: green;   */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .blog-center-main-div{
     width: 80%;
     height: 100%;
+    flex-direction: column;
     /* background-color: yellow; */
 }
 
@@ -826,23 +718,15 @@ select:focus{
     font-size: 50px;
     font-weight: bold;
     align-items: top;
-    display: flex;
-    justify-content: center;
     text-transform: capitalize;
 }
 .blog-detail-div{
     width: 100%;
-    height: 85%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 85%;;
 }
 .blog-detail-box{
     width: 95%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #C59C3D;
     border-radius: 15px;
     /* background-color: rebeccapurple; */
@@ -858,9 +742,6 @@ select:focus{
 .blog-right-div{
     width: 70%;
     height: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .blog-right{
     background-image: url(../Pictures/map-light.png);
@@ -868,40 +749,33 @@ select:focus{
     width: 95%;
     height: 95%;
     text-align: center;
+    flex-direction: column;
 }
 .blog-content-heading-div{
     width: 100%;
     height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .blog-content-heading{
     color: white;
     font-family: zurchn-regular;
     font-weight: 550;
-    font-size: 35px;
+    font-size: 2.1rem;
 }
 .blog-content-div{
     width: 100%;
     height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: left;
 }
 .blog-content{
     color: white;
     font-family: zurchn-regular;
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 30px;
     text-align: justify;
 }
 .blog-btn-div{
     width: 100%;
     height: 10%;
-    display: flex;
-    align-items: center;
     justify-content: left;
 }
 .blog-btn{
@@ -909,13 +783,13 @@ select:focus{
     background-color: #2F345B;
     color: white;
     font-family: zurchn-regular;
-    font-size: 23px;
+    font-size: 1.5rem;
     border-radius: 7px;
     width: 14%;
     height: 100%;
 }
 .blog-left-angle{
-    font-size: 50px;
+    font-size: 3.1rem;
     font-weight: bold;
     display: none;
 }
@@ -925,23 +799,18 @@ select:focus{
 }
 .blog-review-line{
     width: 100%;
-    height: 10vh;
+    height: 6rem;
     /* background-color: red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .main-div-our-customers{
     width: 100%;
-    height: 40vh;
+    height: 22rem;
     /* background-color: red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .div-our-customers{
     width: 70%;
     height: 100%;
+    flex-direction: column;
     /* background-color: green; */
 }
 .our-customers-heading{
@@ -949,10 +818,7 @@ select:focus{
     height: 20%;
     color: #C59C3D;
     font-family: zurchn-regular;
-    font-size: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 2.2rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -966,10 +832,7 @@ select:focus{
     width: 25%;
     height: 100%;
     /* background-color: green; */
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .circle-img{
     width: 200px;
@@ -982,7 +845,7 @@ select:focus{
 .our-customers-star-cls {
     background-color: #2F345B;
     color: white;
-    font-size: 20px;
+    font-size: 1.2rem;
     width: 30px;           
     height: 30px;             
     line-height: 30px;        
@@ -996,57 +859,43 @@ select:focus{
     /* background-color: red; */
     box-sizing: border-box;
     padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
   .our-customers-right{
     font-family: zurchn-regular;
     color: #2F345B;
-    font-size: 30px;
+    font-size: 1.8rem;
     line-height: 45px;
     text-align: justify;
   }
   .our-customers-bottom-div{
     width: 100%;
-    height: 10vh;
+    height: 7rem;
     /* background-color: red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .our-customers-bottom{
     width: 80%;
     height: 100%;
     /* background-color: green; */
-    display: flex;
     color: #2F345B;
     font-family: zurchn-regular;
-    font-size: 30px;
+    font-size: 1.8rem;
     justify-content: space-between;
-    align-items: center;
   }
  .our-customers-bottom-left-arrow{
     height: 50%;
   }
   .main-footer-div{
     width: 100%;
-    height: 50vh;
+    height: 30rem;
     background-color: #c59c3d;
     background-image: url(../Pictures/bildings.png);
     background-size: cover;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   .footer-bottom{
     width: 100%;
     height: 10%;
     background-color: #f2cd74;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #C59C3D;
     font-family: zurchn-regular;
 }
@@ -1058,20 +907,16 @@ select:focus{
   .footer{
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .left-footer{
     /* background-color: red; */
     width: 33.3333%;
     height: 100%;
+    flex-direction: column;
   }
   .left-footer-top{
     width: 100%;
     height: 30%;
-    display: flex;
-    align-items: center;
   }
   .left-footer img{
     width: 75%;
@@ -1080,8 +925,6 @@ select:focus{
     width: 100%;
     height: 40%;
     position: relative;
-    display: flex;
-    align-items: center;
   }
   .left-footer-center input{
     background-color: transparent;
@@ -1089,7 +932,7 @@ select:focus{
     border-bottom: 3px solid #2F345B;
     color: white;
     font-family:zurchn-regular ;
-    font-size: 30px;
+    font-size: 1.7rem;
   } 
   .left-footer-center input:focus, input:focus{
     outline: none;
@@ -1101,13 +944,14 @@ select:focus{
     color: white;
     background-color: #2F345B;
     font-family: zurchn-regular;
-    font-size: 20px;
+    font-size: 1.2rem;
     border: none;
     box-sizing: border-box;
     padding: 5px 10px;
     border-radius: 10px;
     position: absolute;
-    right: 19%;
+    right: 13%;
+    bottom: 45%;
   }
   .left-footer-center-bottom{
     width: 100%;
@@ -1116,14 +960,12 @@ select:focus{
   .footer-center-div-1-1{
     width: 50%;
     height: 100%;
-    display: flex;
-    align-items: center;
     justify-content: space-evenly;
   }
     .footer-center-icon-cls {
         background-color: #f2cd74;
         color: #2F345B;
-        font-size: 25px;
+        font-size: 1.6rem;
         width: 40px;           
         height: 40px;        
         display: flex; 
@@ -1135,9 +977,7 @@ select:focus{
     /* background-color: green; */
     width: 33.3333%;
     height: 100%;
-    display: flex;
     align-items: flex-start;
-    justify-content: center;
   }
   .footer-center-heading-div{
     width: 50%;
@@ -1146,7 +986,6 @@ select:focus{
   .footer-center-heading-div ul{
     width: 100%;
     height: 100%;
-    display: flex;
     flex-direction: column;
     align-items: self-start;
     justify-content: space-evenly;
@@ -1155,14 +994,13 @@ select:focus{
   .footer-center-heading-div ul li a {
     color: white;
     letter-spacing: 1.2px;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: bold;
   }
   .right-footer{
     /* background-color: yellow; */
     width: 33.3333%;
     height: 100%;
-    display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: top;
@@ -1177,7 +1015,7 @@ select:focus{
 }
 .contact-right-ul-li{
     font-family: zurchn-regular;
-    font-size: 19px;
+    font-size: 1.2rem;
     text-decoration: none;
     color: white;
     text-transform: capitalize;
@@ -1186,11 +1024,10 @@ select:focus{
 .footer-right-heading-div{
     width: 75%;
     height: 65%;
-    display: flex;
   }
   .contact-right-ul-li-p{
     color: #2F345B;
-    font-size: 30px;
+    font-size: 1.9rem;
     font-weight: bold;
     letter-spacing: 1px;
   }
@@ -1201,6 +1038,7 @@ select:focus{
   }
   .contact-icon{
     color: #f2cd74;
-    font-size: 30px;
+    font-size: 1.9rem;
     padding-right: 15px;
   }
+  
