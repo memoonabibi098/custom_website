@@ -109,7 +109,6 @@ html::-webkit-scrollbar {
     font-size: 1.2rem;
     text-decoration: none;
     color: #2F345B;
-    text-transform: capitalize;
 }
 .header-right-box-btn{
     width: 20%;
@@ -141,12 +140,12 @@ html::-webkit-scrollbar {
     position: relative;
 }
 .search-lable-div{
-    width: 58%;
+    width: 66%;
     height: 30%;
     /* background-color: rebeccapurple; */
     position: absolute;
     top: -55%;
-    left: 20%;
+    left: 15%;
     justify-content: start;
 }
 .search-lable{
@@ -167,15 +166,14 @@ html::-webkit-scrollbar {
     font-family:zurchn-regular ;
     font-size: 1.3rem;
     color: white;
-    text-transform: capitalize;
 }
 .search-div{
-    width: 60%;
+    width: 70%;
     height: 55%;
     background-color: #f2cd74;
     position: absolute;
     top: -25%;
-    left: 20%;
+    left: 15%;
     border-radius: 0.75rem;
     justify-content: space-between;
 
@@ -225,7 +223,7 @@ select:focus{
     border: none;
     padding: 0px 10px;
     box-sizing: border-box;
-    color: #f2cd74;
+    color: white;
     font-family:zurchn-regular ;
     font-size: 25px;
     text-transform: capitalize;
@@ -543,15 +541,15 @@ select:focus{
 .services-dots .dot-1.active {
     background-color: #2F345B; /* active color */
 }
-.exhibitions-left{
+/* .exhibitions-left{
     width: 35%;
     height: 100%;
-    /* background-color: green; */
+     background-color: green; 
 }
 .exhibitions-img-div{
     width: 90%;
     height: 85%;
-    /* background-color: #C59C3D; */
+     background-color: #C59C3D; 
     border-radius: 20px;
 }
 .exhibitions-img-div img{
@@ -561,12 +559,12 @@ select:focus{
 .exhibitions-right{
     width: 50%;
     height: 100%;
-    /* background-color: red; */
+    background-color: red; 
 }
 .exhibitions-text-div{
     width: 90%;
     height: 85%;
-    /* background-color: #C59C3D; */
+     background-color: #C59C3D; 
     border-radius: 20px;
     flex-direction: column;
 }
@@ -580,7 +578,7 @@ select:focus{
 .exhibitions-div-detail{
     width: 100%;
     height: 15%;
-    /* background-color: red; */
+     background-color: red; 
     font-family: zurchn-regular;
     font-size: 1.6rem;
     line-height: 40px;
@@ -591,7 +589,7 @@ select:focus{
 .exhibitions-div-date{
     width: 100%;
     height: 30%;
-    /* background-color: gray; */
+     background-color: gray; 
     flex-direction: column;
 }
 .exhibitions-div-date i {
@@ -608,7 +606,7 @@ select:focus{
 .exhibitions-div-location{
     width: 100%;
     height: 30%;
-    /* background-color: gray; */
+    background-color: gray; 
     flex-direction: column;
 }
 .exhibitions-div-location i {
@@ -634,7 +632,7 @@ select:focus{
     font-weight: bold;
     display: none;
 }
-/* When hovering over the main div, show the arrows */
+ When hovering over the main div, show the arrows 
 .services-main-div:hover .exhibitions-left-angle {
     display: block;
 }
@@ -686,11 +684,10 @@ select:focus{
     100% {
         width: 100%;
     }
-}
+} */
 .ex-blog-line{
     width: 100%;
     height: 10vh;
-    /* background-color: red; */
 }
 .full-line{
     width: 100%;
@@ -698,27 +695,133 @@ select:focus{
     background-color: #2F345B;
 }
 .blog-main-div{
+    width: 100%;
+    height: 30rem;
+}
+.blog-div{
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+}
+.blog-heading-div{
+    width: 100%;
+    height: 15%;
+    color: #c59c3d;
+    font-family: zurchn-regular;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+.blog-detail-div{
+    width: 100%;
+    height: 85%;
+    background-color: #c59c3d;
+    border-radius: 1.2rem;
+    flex-direction: column;
+    box-shadow: -px 0px 0px 0px #2f345b ;
+}
+.blog-top-div{
+    width: 100%;
+    height: 80%;
+}
+.blog-left-div{
+    width: 25%;
+    height: 100%;
+}
+.blog-img-div{
+    width: 80%;
+    height: 80%;
+    background-color: aquamarine;
+    border-radius: 20px;
+    background-image: url(../Pictures/image-41.png);
+    background-size: cover;
+}
+.blog-right-div{
+    width: 75%;
+    height: 100%;
+}
+.blog-text-detail-div{
+    width: 95%;
+    height: 90%;
+    flex-direction: column;
+}
+.blog-detail-heading-div{
+    width: 100%;
+    height: 20%;
+    color: white;
+    font-family: zurchn-regular;
+    font-size: 2rem;
+    justify-content: flex-start;
+    text-transform: capitalize;
+}
+.blog-info-div{
+    width: 100%;
+    height: 15%;
+    /* background-color: aliceblue; */
+    justify-content: flex-start;
+}
+.by-author-div{
+    width: 15%;
+    height: 100%;
+    justify-content: flex-start;
+    color: white;
+    font-family: zurchn-regular;
+    font-size: 1.2rem;
+    text-transform:capitalize ;
+    letter-spacing: 1.5px;
+}
+.comments-div{
+    width: 16%;
+    height: 100%;
+    justify-content: space-between;
+    color: white;
+    font-family: zurchn-regular;
+    font-size: 1.2rem;
+    text-transform:capitalize ;
+}
+.comments-div i{
+    color: #2f345b;
+}
+.blog-detail-text{
+    width: 100%;
+    height: 65%;
+    font-family: zurchn-regular;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 2rem;
+    text-align: justify;
+    align-items: self-start;
+}
+.blog-bottom-div{
+    width: 100%;
+    height: 20%;
+    border-top: 3px dotted #2F345B;
+}
+
+/* .blog-main-div{
   width: 100%;
   height: 55vh;
-  /* background-color: green;   */
+   background-color: green;
 }
 .blog-center-main-div{
     width: 80%;
     height: 100%;
     flex-direction: column;
-    /* background-color: yellow; */
+     background-color: yellow; 
 }
 
 .blog-heading{
     width: 100%;
     height: 15%;
-    /* background-color: green; */
+     background-color: green; 
     color: #C59C3D;
     font-family:zurchn-regular ;
-    font-size: 50px;
+    font-size: 2.2rem;
     font-weight: bold;
-    align-items: top;
-    text-transform: capitalize;
+    align-items: self-start;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .blog-detail-div{
     width: 100%;
@@ -729,19 +832,26 @@ select:focus{
     height: 100%;
     background-color: #C59C3D;
     border-radius: 15px;
-    /* background-color: rebeccapurple; */
+     background-color: rebeccapurple; 
     margin: 10px;
 }
 .blog-left-div{
     width: 30%;
-    height: 100%;
-    background-image: url(../Pictures/image.png);
+    height: 80%;
+    align-items: self-start;
+}
+.blog-let-img-div{
+    width: 60%;
+    height: 70%;
+    border-radius: 1rem;
+    background-color: red;
+    background-image: url(../Pictures/image-41.png);
     background-size: cover;
-    border-radius: 15px 0px 0px 15px;
 }
 .blog-right-div{
     width: 70%;
-    height: 100%; 
+    height: 80%; 
+    align-items: self-start;
 }
 .blog-right{
     background-image: url(../Pictures/map-light.png);
@@ -792,11 +902,11 @@ select:focus{
     font-size: 3.1rem;
     font-weight: bold;
     display: none;
-}
+} */
 /* When hovering over the main div, show the arrows */
-.blog-main-div:hover .blog-left-angle {
+/* .blog-main-div:hover .blog-left-angle {
     display: block;
-}
+} */
 .blog-review-line{
     width: 100%;
     height: 6rem;
@@ -938,7 +1048,7 @@ select:focus{
     outline: none;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #f2cd74;
+    color: white;
   }
   .left-footer-center-btn{
     color: white;
@@ -954,11 +1064,12 @@ select:focus{
     bottom: 45%;
   }
   .left-footer-center-bottom{
-    width: 100%;
+    width: 80%;
     height: 30%;
+    justify-content: start;
   }
   .footer-center-div-1-1{
-    width: 50%;
+    width: 60%;
     height: 100%;
     justify-content: space-evenly;
   }
@@ -1003,7 +1114,7 @@ select:focus{
     height: 100%;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: top;
+    justify-content: start;
   }
   .contact-right-ul{
     width: 100%;
@@ -1018,7 +1129,6 @@ select:focus{
     font-size: 1.2rem;
     text-decoration: none;
     color: white;
-    text-transform: capitalize;
     line-height: 35px;
 }
 .footer-right-heading-div{
