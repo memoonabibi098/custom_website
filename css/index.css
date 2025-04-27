@@ -754,6 +754,31 @@ select:focus{
     font-size: 2rem;
     justify-content: flex-start;
     text-transform: capitalize;
+    position: relative; /* important for ::after positioning */
+    overflow: hidden;
+}
+.blog-detail-heading-div p {
+    display: inline-block;
+    position: relative;
+    cursor: pointer; /* optional, for hover feel */
+    
+}
+
+.blog-detail-heading-div p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* little below the text */
+    width: 0%;
+    height: 2px;
+    background-color: #2f345b; /* white underline */
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.blog-detail-heading-div p:hover {
+    color: #2f345b; /* <--- new text color on hover */
+}
+.blog-detail-heading-div p:hover::after {
+    width: 100%;
 }
 .blog-info-div{
     width: 100%;
