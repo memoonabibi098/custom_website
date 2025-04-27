@@ -34,8 +34,8 @@
 }
 
 
-   /* Preloader styling */
-   .preloader {
+/* Preloader styling */
+.preloader {
     position: fixed;
     top: 0;
     left: 0;
@@ -52,28 +52,32 @@
 
 /* Loader styling */
 .loader {
-    width: 350px;  /* Adjust based on your logo size */
-    height: 350px;  /* Adjust based on your logo size */
+    width: 350px;
+    /* Adjust based on your logo size */
+    height: 350px;
+    /* Adjust based on your logo size */
     overflow: hidden;
+    z-index: 9999;
 }
 
 /* Loader image styling */
 .loader-img {
     width: 100%;
     height: auto;
-    clip-path: inset(0 100% 0 0); /* Initially hides the image */
-    animation: slideImage 2s steps(20) infinite; /* Adjust number of steps based on logo width */
+    clip-path: inset(0 100% 0 0);
+    /* Initially hides the image */
+    animation: slideImage 2s steps(20) infinite;
+    /* Adjust number of steps based on logo width */
+    z-index: 9999;
 }
 
 /* Animation to reveal the image */
 @keyframes slideImage {
     to {
-        clip-path: inset(0 -100% 0 0); /* Reveals the image by animating the clip-path */
+        clip-path: inset(0 -100% 0 0);
+        /* Reveals the image by animating the clip-path */
     }
 }
-
-
-
 
 div {
     display: flex;
@@ -98,7 +102,7 @@ html::-webkit-scrollbar {
     /* Now height will change, not width */
     background-color: #C59C3D;
     /* Your main color */
-    z-index: 999999;
+    z-index: 9989;
     transition: height 1s ease-out;
 }
 
@@ -856,7 +860,6 @@ select:focus {
 .blog-img-div {
     width: 80%;
     height: 80%;
-    background-color: aquamarine;
     border-radius: 20px;
     background-image: url(../Pictures/image-41.png);
     background-size: cover;
@@ -1260,13 +1263,6 @@ input:focus {
     justify-content: space-evenly;
 }
 
-.contact-right-ul-li {
-    font-family: zurchn-regular;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: white;
-    line-height: 35px;
-}
 
 .footer-right-heading-div {
     width: 75%;
@@ -1281,17 +1277,36 @@ input:focus {
 }
 
 .contact-right-ul li {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    font-family: zurchn-regular;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    line-height: 35px;
+    justify-content: flex-start;
+}
+
+.contact-i-div {
+    width: 15%;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.contact-text-details {
+    width: 85%;
+    height: 100%;
+    justify-content: start;
 }
 
 .contact-icon {
     color: #f2cd74;
     font-size: 1.9rem;
-    padding-right: 15px;
 }
-.scroll-div{
+
+.scroll-div {
     height: 60px;
     width: 60px;
     display: block;
@@ -1299,19 +1314,22 @@ input:focus {
     bottom: 30px;
     right: 30px;
 }
-.scroll-to-top{
+
+.scroll-to-top {
     height: 60px;
     width: 60px;
-    background: #2F345B;
+    background: #c59c3d;
     border: none;
-    border-radius: 5px;
-    cursor:pointer;
+    border-radius: 7px;
+    cursor: pointer;
     opacity: 0.5;
     transition: opacity 0.3s;
 }
-.scroll-to-top:hover{
+
+.scroll-to-top:hover {
     opacity: 1;
 }
-.scroll-to-top img{
+
+.scroll-to-top img {
     width: 80%;
 }
