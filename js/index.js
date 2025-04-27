@@ -1,3 +1,10 @@
+       // Wait until everything (HTML, CSS, images, etc.) has fully loaded
+       window.onload = function() {
+        // Hide the preloader and display the main content after everything is loaded
+        document.querySelector('.preloader').style.display = 'none';
+        document.querySelector('.main-content').style.display = 'block';
+    };
+
 document.addEventListener('DOMContentLoaded', function() {
     // Get all select elements
     const selectElements = document.querySelectorAll('.search-div-select');
@@ -286,3 +293,24 @@ document.addEventListener('DOMContentLoaded', function() {
         startAutoRotate();
     });
 });
+
+/*scroll-to-top*/
+// Get the button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 100px from the top of the document, show the button
+window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopBtn.style.display = "flex";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+};
+
+// When the user clicks the button, scroll to the top of the document
+scrollToTopBtn.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
