@@ -1,0 +1,102 @@
+@media only screen and (min-width: 992px)and (max-width:1280px) {
+	/*Tablets [1001px -> 1200px]*/
+    .hero-bg-img {
+        height: 40rem;
+        background-image: url(../Pictures/picture-1-1280.png);
+    }
+    .main-div {
+        height: 40rem;
+        background-color: hsl(233deg 32% 27% / 50%);
+    }
+    .main-navbar {
+        height: 12%;
+    }
+    .navbar {
+        width: 90%;
+        height: 70%;
+    }
+    .header-left {
+        width: 25%;
+        justify-content: flex-start;
+    }
+    .header-left-box {
+        width: 90%;
+    }
+    .search-lable-div {
+        width: 87%;
+        left: 5%;
+    }
+    .search-div {
+        width: 90%;
+        left: 5%;
+    }
+    .choose-us-benefit-ul {
+        width: 95%;
+        height: 70%;
+    }
+    .choose-us-counter-div {
+        width: 95%;
+        justify-content: space-between;
+    }
+    .sponsor-1 {
+        width: 95%;
+    }
+    .services-div {
+        width: 100%;
+        height: 95%;
+    }
+    .services-dots-div {
+        height: 2rem;
+    }
+    .blog-div {
+        width: 100%;
+    }
+    .blog-detail-div-box {
+        width: 90%;
+    }
+    .comments-div {
+        width: 19%;
+    }
+    .blog-button-view-div {
+        width: 30%;
+    }
+    .blog-button-time-div {
+        width: 70%;
+    }
+    .div-our-customers {
+        width: 90%;
+    }
+    .our-customers-bottom {
+        width: 95%;
+    }
+    .main-footer {
+        width: 90%;
+    }
+    .left-footer {
+        width: 37%;
+    }
+    .center-footer {
+        width: 26%;
+    }
+    .right-footer {
+        width: 37%;
+    }
+    
+
+
+
+
+
+
+
+
+  }
+  @media only screen and (max-width: 1080px) {
+	/*Big smartphones [601px -> 1000px]*/
+  }
+  @media only screen and (max-width: 768px) {
+	/*Big smartphones [426px -> 600px]*/
+  }
+  @media only screen and (max-width: 375px) {
+	/*Small smartphones [325px -> 425px]*/
+  }
