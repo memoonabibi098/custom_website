@@ -6,6 +6,7 @@
         background-image: url(../Pictures/picture-1-1280.png);
         background-size: cover;
     }
+
     .main-div {
         height: 40rem;
         background-color: hsl(233deg 32% 27% / 50%);
@@ -29,17 +30,8 @@
         width: 90%;
     }
 
-    .search-lable-div {
-        width: 87%;
-        left: 5%;
-    }
-    .search-lable{
-        width: 70%;
-    }
-
-    .search-div {
+    .search-box {
         width: 90%;
-        left: 5%;
     }
 
     .choose-us-benefit-ul {
@@ -169,21 +161,23 @@
         width: 7rem;
     }
 
-    .search-lable-div {
-        width: 92%;
-        left: 2.5%;
-    }
-
-    .search-div {
+    .search-box {
         width: 95%;
-        left: 2.5%;
     }
 
-    .search-div-patition {
+    .lable {
+        font-size: 1rem;
+    }
+
+    .custom-select-box {
+        font-size: 1rem;
+    }
+
+    .label-select-div {
         width: 28%;
     }
 
-    .search-div-btn {
+    .btn-div {
         width: 16%;
     }
 
@@ -427,6 +421,11 @@
     #scroll-progress-bar {
         display: none;
     }
+    .ms-header-box{
+        display: flex;
+        width: 100%;
+        height: 55rem;
+    }
 
     .hero-bg-img {
         height: 25rem;
@@ -443,6 +442,11 @@
 
     .main-navbar {
         height: 15%;
+        color: #f2cd74;
+        font-size: 2rem;
+        box-sizing: border-box;
+        padding-right: 20px;
+        align-items: center;
     }
 
     .navbar {
@@ -451,8 +455,13 @@
         justify-content: flex-start;
     }
 
+    .ms-nav-icon {
+        display: none;
+        z-index: 99999;
+    }
+
     .header-left {
-        width: 60%;
+        width: 65%;
         box-sizing: border-box;
         padding: 20px;
         justify-content: flex-start;
@@ -460,20 +469,29 @@
 
     .sm-nav-main-div {
         width: 100%;
-        height: 55rem;
+        height: 60rem;
         flex-direction: column;
         align-items: flex-end;
         position: fixed;
+    }
+
+    .sm-nav-main-div {
+        display: flex;
         z-index: 99999;
     }
 
     .ms-navbar {
         width: 50%;
         height: 100%;
-        background-color: white;
-        box-shadow: 0px 0px 10px 5px #2F345B;
+        background-color: rgba(255, 255, 255, 0.842);
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 10px 3px #2F345B;
         position: relative;
         flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        top: 0%;
+        right: -60%;
     }
 
     .sm-nav-main-div-cross {
@@ -484,26 +502,49 @@
         justify-content: right;
         box-sizing: border-box;
         padding-right: 20px;
-
-
     }
 
     .sm-nav-main-div-ul {
         width: 100%;
-        height: 50%;
+        height: 40%;
         color: #2F345B;
         font-family: zurchn-regular;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: bold;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .sm-nav-main-div-ul li {
+        width: 100%;
+        height: 10%;
+        box-sizing: border-box;
+        padding: 20px;
+        display: flex;
         align-items: center;
+    }
+
+    .sm-nav-main-div-ul li:hover {
+        width: 100%;
+        background-color: rgba(73, 73, 73, 0.164);
     }
 
     .sm-nav-main-div-btn {
         width: 100%;
-        height: 40%;
+        height: 30%;
+    }
+
+    .sm-nav-main-div-btn button {
+        background-color: #2f345b;
+        color: white;
+        font-family: 'zurchn-regular';
+        font-size: 1.3rem;
+        width: 65%;
+        height: 15%;
+        border: none;
+        border-radius: 0.5rem;
     }
 
     .main-div-p {
@@ -522,14 +563,105 @@
     .ms-search-bar-div {
         width: 100%;
         height: 30rem;
-        background-color: green;
         position: absolute;
         top: 25rem;
         left: 0px;
     }
-
-
-
+    .search-bar-div-ms {
+        display: flex;
+        height: 90%;
+        width: 90%;
+        background-color: #c59c3d;
+        border-radius: 1rem;
+        position: relative;
+    }
+    .search-box {
+        width: 100%;
+        height: 100%;
+        display: block;
+        bottom: 0%;
+    }
+    .label-select-div {
+        width: 100%;
+        height: 26%;
+    }
+    .custom-select-box{
+        border-radius: 1rem;
+    }
+    .btn-div {
+        width: 100%;
+        height: 15%;
+        border-radius: 1rem;
+        margin-top: 7%;
+    }
+    .choose-us-div {
+        width: 100%;
+        height: 100rem;
+    }
+    .choose-us-heading-div {
+        font-size: 1.7rem;
+    }
+    .choose-us-heading {
+        height: 8%;
+    }
+    .choose-us-p-div {
+        font-size: 1rem;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0px 20px;
+        line-height: 2rem;
+    }
+    .choose-us-benefit-ul {
+        width: 80%;
+        height: 90%;
+        flex-direction: column;
+    }
+    .choose-us-benefit-ul-li {
+        width: 80%;
+        height: 23%; 
+    }
+    .choose-us-description {
+        width: 90%;
+        height: 25%;
+        line-height: 1.2rem;
+    }
+    .choose-us-counter-div {
+        height: 30%;
+        flex-direction: column;
+    }
+    .choose-us-counter-div-1 {
+        width: 100%;
+        height: 50%;
+    }
+    .choose-us-counter-div-1-2 {
+        width: 100%;
+        height: 25%;
+    }
+    .affiliations {
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+    .sponsor {
+        width: 100%;
+        height: 20rem;
+    }
+    .sponsor-1 {
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .sponsor-1-01 {
+        width: 100%;
+        height: 40%;
+    }
+    .sponsor-1-1-img {
+        width: 30%;
+        height: 80%;
+    }
+    .sponsor-1-1-text {
+        width: 70%;
+        line-height: 1.5rem;
+    }
 
 
 

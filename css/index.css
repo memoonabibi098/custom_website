@@ -42,6 +42,13 @@ a {
     display: none;
 }
 
+.ms-nav-icon {
+    display: none;
+}
+.ms-header-box{
+    display: none;
+}
+
 
 /* Preloader styling */
 .preloader {
@@ -214,103 +221,166 @@ html::-webkit-scrollbar {
     height: 6rem;
     position: relative;
 }
+.search-bar-div-ms{
+    display: none;
+}
 
-.search-lable-div {
-    width: 66%;
-    height: 30%;
+.search-box {
+    width: 70%;
+    height: 100%;
+    justify-content: left;
     position: absolute;
-    top: -55%;
-    left: 15%;
-    justify-content: start;
+    bottom: 60%;
+    align-items: self-end;
+
 }
 
-.search-lable {
-    width: 71.5%;
+.label-select-div {
+    width: 30%;
     height: 100%;
-}
-
-.search-lable-ul {
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: flex-start;
-    padding: 0px 0px 0px 10px;
-    box-sizing: border-box;
-    display: flex;
 }
 
-.search-lable-ul-li {
+.lable {
+    width: 100%;
+    height: 40%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding-left: 20px;
     font-family: zurchn-regular;
     font-size: 1.3rem;
     color: white;
 }
 
-.search-div {
-    width: 70%;
-    height: 55%;
-    background-color: #f2cd74;
-    position: absolute;
-    top: -25%;
-    left: 15%;
-    border-radius: 0.75rem;
-    justify-content: space-between;
+.select {
+    justify-content: flex-start;
+    width: 100%;
+    height: 60%;
 }
 
-.search-div-patition {
-    width: 30%;
-    height: 100%;
+.custom-select-wrapper {
     position: relative;
-}
-
-.search-div-select {
     width: 100%;
     height: 100%;
-    display: flex;
-    background: none;
-    border: none;
-    padding: 0px 10px;
+    justify-content: flex-start;
+}
+
+.custom-select-box {
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    cursor: default;
+    background: #f2cd74;
+    font-family: zurchn-regular;
+    font-size: 1.3rem;
+    color: #2f345b;
+}
+
+.b-radius {
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.custom-select-box span {
+    flex-grow: 1;
+}
+
+.dropdown-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('../Pictures/Polygon-1.png');
+    /* You can change this */
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.custom-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #f2cd74;
+    border-radius: 1rem;
+    max-height: 200px;
+    overflow: hidden;
+    display: none;
+    z-index: 99;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.custom-dropdown input[type="text"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    font-size: 1.2rem;
     color: #2F345B;
     font-family: zurchn-regular;
-    font-weight: 700;
-    font-size: 1.25rem;
-    text-transform: capitalize;
-    appearance: none;
-    -webkit-appearance: none;
-}
-
-.select-option-create-down {
-    font-size: 2.5rem;
-    color: #c59c3d;
-    position: absolute;
-    top: 15%;
-    right: 10%;
-}
-
-.search-div-select-option {
     background-color: #f2cd74;
-    width: 80%;
-    height: 100%;
-}
-
-select:focus {
+    border-bottom: 2px solid #2F345B;
     outline: none;
-    border: none;
-    box-shadow: none;
 }
 
-.search-div-btn {
-    width: 10%;
-    height: 100%;
-    background-color: #2F345B;
-    border: none;
-    padding: 0px 10px;
-    box-sizing: border-box;
-    color: white;
+.custom-dropdown input::placeholder {
+    color: #2F345B;
     font-family: zurchn-regular;
-    font-size: 25px;
-    text-transform: capitalize;
-    border-radius: 0px 0.75rem 0.75rem 0px;
+}
+
+.custom-dropdown div.option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.custom-dropdown div.option:hover {
+    background: #c59c3d44;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+
+
+
+
+.option img {
+    width: 20px;
+    height: 14px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.btn-div {
+    width: 10%;
+    height: 60%;
+    background-color: #2F345B;
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+
+.selectedFlag{
+    display: none;
+   width: 20px;
+ height: 14px;
+vertical-align: middle;
+ margin-right: 8px;
+}
+
+.btn-div button {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    font-family: zurchn-regular;
+    font-size: 1.5rem;
+    color: white;
+
 }
 
 .choose-us-div {

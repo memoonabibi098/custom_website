@@ -1,48 +1,54 @@
-// Wait for 3 seconds (matching the animation time) before hiding the preloader
-setTimeout(function () {
-  document.querySelector(".preloader").style.display = "none";
-}, 2000); // 3000ms = 3 seconds, adjust to match the duration of your animation
-
 document.addEventListener("DOMContentLoaded", function () {
-  // Get all select elements
-  const selectElements = document.querySelectorAll(".search-div-select");
-
-  selectElements.forEach((select) => {
-    // Find the corresponding caret icon (next sibling span)
-    const caretIcon = select.nextElementSibling;
-
-    // Track if dropdown is open
-    let isOpen = false;
-
-    // When select is clicked
-    select.addEventListener("mousedown", function () {
-      isOpen = !isOpen;
-      toggleCaretIcon(caretIcon, isOpen);
-    });
-
-    // When select loses focus (dropdown closes)
-    select.addEventListener("blur", function () {
-      isOpen = false;
-      toggleCaretIcon(caretIcon, isOpen);
-    });
-
-    // When an option is selected
-    select.addEventListener("change", function () {
-      isOpen = false;
-      toggleCaretIcon(caretIcon, isOpen);
-    });
-  });
-
-  function toggleCaretIcon(icon, isOpen) {
-    if (isOpen) {
-      icon.classList.remove("fa-caret-down");
-      icon.classList.add("fa-caret-up");
-    } else {
-      icon.classList.remove("fa-caret-up");
-      icon.classList.add("fa-caret-down");
+  setTimeout(function () {
+    const preloader = document.querySelector(".preloader");
+    if (preloader) {
+      preloader.style.display = "none";
     }
-  }
+
+    // Only apply nav styles on small screens (e.g., width < 768px)
+    if (window.innerWidth < 769) {
+      const nav = document.querySelector(".ms-navbar");
+      const navIcon = document.querySelector(".ms-nav-icon");
+
+      if (nav) nav.style.display = "block"; // or "flex" if needed
+      if (navIcon) navIcon.style.display = "flex"; // or "block"
+    }
+
+  }, 2000);
 });
+
+
+
+
+function msbar(){
+  var msNavbar = document.querySelector('.ms-navbar');
+  msNavbar.style.right="0%";
+  msNavbar.style.transition="right .5s ease "; 
+  var msNavbar = document.querySelector('.ms-nav-icon');
+  msNavbar.style.zIndex="0";
+
+
+}
+function msCross() {
+  var msNavbar = document.querySelector('.ms-navbar');
+  msNavbar.style.right = "-60%";
+
+  var navIcon = document.querySelector('.ms-nav-icon');
+  navIcon.style.transition = "right .5s ease"; 
+
+  // Delay z-index change
+  setTimeout(function () {
+    navIcon.style.zIndex = "99999";
+  }, 500); // 500ms to match transition
+}
+
+
+
+
+
+
+
+
 
 window.addEventListener("scroll", () => {
   const scrollTop = window.scrollY;
@@ -51,6 +57,84 @@ window.addEventListener("scroll", () => {
   document.getElementById("scroll-progress-bar").style.height =
     scrollPercent + "%";
 });
+
+
+
+
+
+
+document.querySelectorAll('.custom-select-wrapper').forEach(wrapper => {
+  const dropdown = wrapper.querySelector('.customDropdown');
+  const dropdownIcon = wrapper.querySelector('.dropdownIcon');
+  const searchInput = wrapper.querySelector('.searchInput');
+  const selectedFlag = wrapper.querySelector('.selectedFlag');
+  const selectedText = wrapper.querySelector('.selectedText');
+  const options = wrapper.querySelectorAll('.option');
+
+  // Toggle dropdown on icon click
+  dropdownIcon.addEventListener('click', (e) => {
+    e.stopPropagation();
+    // Hide any other open dropdowns
+    document.querySelectorAll('.customDropdown').forEach(d => {
+      if (d !== dropdown) d.style.display = 'none';
+    });
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Prevent dropdown from closing when clicking inside
+  dropdown.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+
+  // Handle option selection
+  options.forEach(option => {
+    option.addEventListener('click', () => {
+      const flagUrl = option.dataset.flag;
+      const countryName = option.textContent.trim();
+
+      selectedFlag.src = flagUrl;
+      selectedFlag.style.display = 'inline';
+      selectedText.innerText = countryName;
+
+      dropdown.style.display = 'none';
+    });
+  });
+
+  // Filter options
+  searchInput.addEventListener('input', () => {
+    const filter = searchInput.value.toLowerCase();
+    options.forEach(option => {
+      const text = option.textContent.toLowerCase();
+      option.style.display = text.includes(filter) ? 'block' : 'none';
+    });
+  });
+});
+
+// Close any dropdown when clicking outside
+document.addEventListener('click', () => {
+  document.querySelectorAll('.customDropdown').forEach(dropdown => {
+    dropdown.style.display = 'none';
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const cards = [
   {
@@ -181,136 +265,8 @@ function resetAutoSlide() {
 updateCards();
 startAutoSlide();
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Sample data for exhibitions (replace with your actual data)
-  const exhibitionsData = [
-    {
-      logo: "./Pictures/chinaplas 2025.png",
-      image: "./Pictures/image 2.png",
-      detail: "the world's leading plastics and rubber trade fair",
-      date: "2025. 4. 15 - 18",
-      location:
-        "Shenzhen World Exhibition & Convention Center (Bao'an), PR China",
-    },
-    {
-      logo: "./Pictures/Sino-Label.png",
-      image: "./Pictures/Sino-Label-img.png",
-      detail: "The Way For Labeling Industry ",
-      date: "04 - 06 , 03 , 2025",
-      location: "China Import and Export Fair Complex, Guangzhou, China",
-    },
-    {
-      logo: "./Pictures/ites.png",
-      image: "./Pictures/ites-img.png",
-      detail:
-        "Shenzhen International Industrial Manufacturing Technology and Equipment Exhibition",
-      date: "2025. 3. 26 - 29",
-      location: "Shenzhen World Exhibition & Convention Center (PR China)",
-    },
-    {
-      logo: "./Pictures/Sino-Pack.png",
-      image: "./Pictures/Sino-Pack-img.png",
-      detail:
-        "The 31st China International Exhibition on Packaging Machinery and Materials",
-      date: "2025. 3. 4 - 6",
-      location: "China Import & Export Fair Complex, Guangzhou, P.R.China",
-    },
-    {
-      logo: "./Pictures/PRINTING SOUTH CHINA EXPO.png",
-      image: "./Pictures/PRINTING SOUTH CHINA EXPO-img.png",
-      detail: "Smart Packaging Printing ",
-      date: "2025. 3. 4 - 6",
-      location: "China Import and Export Fair Complex, Guangzhou, China",
-    },
-  ];
 
-  // Get DOM elements
-  const leftArrow = document.querySelector(
-    ".exhibitions-left-angle.fa-angle-left"
-  );
-  const rightArrow = document.querySelector(
-    ".exhibitions-left-angle.fa-angle-right"
-  );
-  const imgDiv = document.querySelector(".exhibitions-img-div img");
-  const logoDiv = document.querySelector(".exhibitions-div-logo img");
-  const detailDiv = document.querySelector(".exhibitions-div-detail p");
-  const dateDiv = document.querySelector(".exhibitions-div-date p");
-  const locationDiv = document.querySelector(".exhibitions-div-location p");
-  const currentNumberSpan = document.querySelector(
-    ".exhibitions-div-slider-span"
-  );
-  const totalNumberSpan = document.querySelector(
-    ".exhibitions-div-slider-span-1"
-  );
 
-  // Set total number of exhibitions
-  totalNumberSpan.textContent = exhibitionsData.length;
-
-  let currentIndex = 0;
-  let autoRotateInterval;
-
-  // Function to update the exhibition display
-  function updateExhibition(index) {
-    const exhibition = exhibitionsData[index];
-
-    imgDiv.src = exhibition.image;
-    logoDiv.src = exhibition.logo;
-    detailDiv.textContent = exhibition.detail;
-    dateDiv.textContent = exhibition.date;
-    locationDiv.textContent = exhibition.location;
-    currentNumberSpan.textContent = index + 1;
-
-    currentIndex = index;
-  }
-
-  // Function to move to next exhibition
-  function nextExhibition() {
-    currentIndex = (currentIndex + 1) % exhibitionsData.length;
-    updateExhibition(currentIndex);
-  }
-
-  // Function to move to previous exhibition
-  function prevExhibition() {
-    currentIndex =
-      (currentIndex - 1 + exhibitionsData.length) % exhibitionsData.length;
-    updateExhibition(currentIndex);
-  }
-
-  // Set up auto rotation
-  function startAutoRotate() {
-    autoRotateInterval = setInterval(nextExhibition, 3000);
-  }
-
-  // Initialize
-  updateExhibition(0);
-  startAutoRotate();
-
-  // Event listeners for arrows
-  leftArrow.addEventListener("click", function () {
-    clearInterval(autoRotateInterval);
-    prevExhibition();
-    startAutoRotate();
-  });
-
-  rightArrow.addEventListener("click", function () {
-    clearInterval(autoRotateInterval);
-    nextExhibition();
-    startAutoRotate();
-  });
-
-  // Pause auto rotation when hovering over the exhibition
-  const servicesMainDiv = document.querySelector(".services-main-div");
-  servicesMainDiv.addEventListener("mouseenter", function () {
-    clearInterval(autoRotateInterval);
-  });
-
-  servicesMainDiv.addEventListener("mouseleave", function () {
-    startAutoRotate();
-  });
-});
-
-/*scroll-to-top*/
-// Get the button
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
 // When the user scrolls down 100px from the top of the document, show the button
