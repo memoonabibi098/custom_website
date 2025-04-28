@@ -332,18 +332,3 @@ scrollToTopBtn.onclick = function () {
     behavior: "smooth",
   });
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

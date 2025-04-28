@@ -32,11 +32,13 @@
     font-family: zurchn-regular;
     src: url('../fonts/zurchn.ttf');
 }
-a{
+
+a {
     text-decoration: none;
     color: #2F345B;
 }
-.sm-nav-main-div{
+
+.sm-nav-main-div {
     display: none;
 }
 
