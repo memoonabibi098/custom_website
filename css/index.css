@@ -32,6 +32,13 @@
     font-family: zurchn-regular;
     src: url('../fonts/zurchn.ttf');
 }
+a{
+    text-decoration: none;
+    color: #2F345B;
+}
+.sm-nav-main-div{
+    display: none;
+}
 
 
 /* Preloader styling */
@@ -45,6 +52,8 @@
     justify-content: center;
     align-items: center;
     background-color: white;
+    /* background-image: url(../Pictures/loder-backgound-1.png);
+    background-size: cover; */
     z-index: 9999;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
@@ -52,9 +61,9 @@
 
 /* Loader styling */
 .loader {
-    width: 350px;
+    width: 400px;
     /* Adjust based on your logo size */
-    height: 350px;
+    height: 400px;
     /* Adjust based on your logo size */
     overflow: hidden;
     z-index: 9999;
@@ -506,7 +515,7 @@ select:focus {
     width: 80%;
     height: 100%;
     font-family: zurchn-regular;
-    font-size: 17px;
+    font-size: 1rem;
     text-transform: capitalize;
     color: white;
     line-height: 2rem;
@@ -605,11 +614,11 @@ select:focus {
 
 .services-detail {
     font-family: zurchn-regular;
-    font-size: 26px;
+    font-size: 1.6rem;
     color: white;
     box-sizing: border-box;
     padding: 0px 25px;
-    text-align: center;
+    text-align: justify;
     line-height: 40px;
 }
 
@@ -789,7 +798,7 @@ select:focus {
 } */
 .ex-blog-line {
     width: 100%;
-    height: 10vh;
+    height: 4rem;
 }
 
 .full-line {
@@ -1228,11 +1237,12 @@ input:focus {
 .footer-center-heading-div {
     width: 50%;
     height: 85%;
+    align-items: self-start;
 }
 
 .footer-center-heading-div ul {
     width: 100%;
-    height: 100%;
+    height: 80%;
     flex-direction: column;
     align-items: self-start;
     justify-content: space-evenly;
