@@ -1235,6 +1235,9 @@ html::-webkit-scrollbar {
     height: 75%;
     justify-content: left;
 }
+.footer-e-mail-div-2 {
+    display: none;
+}
 
 .left-footer-center {
     width: 85%;
