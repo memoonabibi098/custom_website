@@ -217,7 +217,7 @@ html::-webkit-scrollbar {
 
 .search-bar-div {
     width: 100%;
-    height: 6rem;
+    height: 5rem;
     position: relative;
 }
 
@@ -281,7 +281,7 @@ html::-webkit-scrollbar {
 }
 
 .b-radius {
-    border-radius: 1rem 0rem 0rem 1rem;
+    border-radius: 0.6rem 0rem 0rem 0.6rem;
 }
 
 .custom-select-box span {
@@ -304,7 +304,7 @@ html::-webkit-scrollbar {
     left: 0;
     right: 0;
     background: #f2cd74;
-    border-radius: 1rem;
+    border-radius: 0.6rem;
     max-height: 200px;
     overflow: hidden;
     display: none;
@@ -356,7 +356,7 @@ html::-webkit-scrollbar {
     width: 10%;
     height: 60%;
     background-color: #2f345b;
-    border-radius: 0rem 1rem 1rem 0rem;
+    border-radius: 0rem 0.6rem 0.6rem 0rem;
 }
 
 .selectedFlag {
@@ -379,7 +379,7 @@ html::-webkit-scrollbar {
 
 .choose-us-div {
     width: 100%;
-    height: 40rem;
+    height: 35rem;
     background-image: url(../Pictures/map.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -389,7 +389,7 @@ html::-webkit-scrollbar {
 
 .choose-us-heading {
     width: 100%;
-    height: 20%;
+    height: 15%;
     flex-direction: column;
 }
 
@@ -417,7 +417,7 @@ html::-webkit-scrollbar {
 
 .choose-us-benefit-ul {
     width: 70%;
-    height: 70%;
+    height: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -522,6 +522,7 @@ html::-webkit-scrollbar {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: white;
+    margin: 1% 0% 1% 0%;
 }
 
 .sponsor {
@@ -530,7 +531,7 @@ html::-webkit-scrollbar {
 }
 
 .sponsor-1 {
-    width: 80%;
+    width: 70%;
     height: 80%;
     justify-content: space-around;
 }
@@ -1099,7 +1100,7 @@ html::-webkit-scrollbar {
 
 .blog-review-line {
     width: 100%;
-    height: 6rem;
+    height: 4rem;
 }
 
 .main-div-our-customers {
@@ -1115,7 +1116,7 @@ html::-webkit-scrollbar {
 
 .our-customers-heading {
     width: 100%;
-    height: 20%;
+    height: 10%;
     color: #c59c3d;
     font-family: zurchn-regular;
     font-size: 2.2rem;
@@ -1123,10 +1124,15 @@ html::-webkit-scrollbar {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+.our-customers-heading p{
+    width: 45%;
+    height: 100%;
+    justify-content: flex-start;
+}
 
 .our-customers-text {
     width: 100%;
-    height: 80%;
+    height: 90%;
     display: flex;
 }
 
@@ -1170,7 +1176,7 @@ html::-webkit-scrollbar {
 
 .our-customers-bottom-div {
     width: 100%;
-    height: 7rem;
+    height: 5rem;
 }
 
 .our-customers-bottom {
@@ -1356,7 +1362,7 @@ input:focus {
 
 .footer-right-number-div {
     width: 100%;
-    height: 18%;
+    height: 15%;
 }
 
 .footer-right-icon-contact {
@@ -1384,12 +1390,12 @@ input:focus {
 
 .footer-right-email-div {
     width: 100%;
-    height: 18%;
+    height: 15%;
 }
 
 .footer-right-address-div {
     width: 100%;
-    height: 18%;
+    height: 15%;
 }
 
 .footer-box-bottom {

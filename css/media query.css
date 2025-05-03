@@ -33,9 +33,12 @@
     .search-box {
         width: 90%;
     }
+    .choose-us-benefit {
+        height: 65%;
+    }
 
     .choose-us-benefit-ul {
-        width: 95%;
+        width: 90%;
         height: 70%;
     }
 
@@ -43,9 +46,16 @@
         width: 95%;
         justify-content: space-between;
     }
+    .choose-us-description {
+        height: 40%;
+        line-height: 25px;
+    }
 
     .sponsor-1 {
-        width: 95%;
+        width: 90%;
+    }
+    .sponsor-1-1-img-icon {
+        height: 70%;
     }
 
     .services-div {
@@ -555,14 +565,14 @@
 
     .ms-search-bar-div {
         width: 100%;
-        height: 30rem;
+        height: 25rem;
         position: absolute;
-        top: 25rem;
+        top: 28rem;
         left: 0px;
     }
     .search-bar-div-ms {
         display: flex;
-        height: 90%;
+        height: 100%;
         width: 90%;
         background-color: #c59c3d;
         border-radius: 1rem;
@@ -572,7 +582,7 @@
         width: 100%;
         height: 100%;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         bottom: 0%;
         align-items: center;
     }
@@ -586,7 +596,7 @@
 
     .label-select-div {
         width: 100%;
-        height: 24%;
+        height: 20%;
     }
     .custom-select-box{
         border-radius: 0.5rem;
@@ -595,18 +605,17 @@
         width: 50%;
         height: 10%;
         border-radius: 1rem;
-        margin-top: 7%;
         border-radius: 10px;
     }
     .choose-us-div {
         width: 100%;
-        height: 100rem;
+        height: 90rem;
     }
     .choose-us-heading-div {
         font-size: 1.5rem;
     }
     .choose-us-heading {
-        height: 8%;
+        height: 7%;
     }
     .choose-us-p-div {
         font-size: 1rem;
@@ -615,8 +624,11 @@
         padding: 0px 20px;
         line-height: 1.5rem;
     }
+    .choose-us-benefit {
+        height: 63%;
+    }
     .choose-us-benefit-ul {
-        width: 80%;
+        width: 90%;
         height: 90%;
         flex-direction: column;
     }
@@ -626,8 +638,8 @@
     }
     .choose-us-description {
         width: 90%;
-        height: 25%;
-        line-height: 1.2rem;
+        height: 40%;
+        line-height: 1.5rem;
     }
     .choose-us-counter-div {
         height: 30%;
@@ -789,9 +801,12 @@
     .div-our-customers {
         width: 90%;
     }
+    .our-customers-heading p {
+        width: 70%;
+    }
     .our-customers-heading {
         height: 15%;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .our-customers-text {
         flex-direction: column;
