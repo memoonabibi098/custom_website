@@ -49,4 +49,21 @@ $(document).ready(function () {
       });
     }
   });
-  
+
+
+$(".team-info-1").on("mouseenter", function() {
+  const $overflow = $(this).find(".team-info-top-overflow");
+  const $detail = $(this).find(".team-detail-div");
+
+  $overflow.stop(true, true).animate({ height: "show", opacity: 1 }, 300);
+  $detail.stop(true, true).animate({ height: "show", opacity: 1 }, 300);
+});
+
+$(".team-info-1").on("mouseleave", function() {
+  const $overflow = $(this).find(".team-info-top-overflow");
+  const $detail = $(this).find(".team-detail-div");
+
+  $overflow.stop(true, true).animate({ height: "hide", opacity: 0 }, 300);
+  $detail.stop(true, true).animate({ height: "hide", opacity: 0 }, 300);
+});
+

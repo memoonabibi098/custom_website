@@ -154,7 +154,7 @@ html::-webkit-scrollbar {
 .hero-bg-img {
   width: 100%;
   height: 40rem;
-  background-image: url(../Pictures/vb-1.png);
+  background-image: url(../Pictures/about\ us\ cover\ pic.png);
   background-size: cover;
 }
 
@@ -239,9 +239,10 @@ html::-webkit-scrollbar {
 
 .main-div-p {
   font-family: zurchn-regular;
-  font-size: 2.5rem;
+  font-size: 5rem;
   color: white;
-  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
 }
 
 .ceo-message-main-div {
@@ -281,7 +282,7 @@ html::-webkit-scrollbar {
 .ceo-message-top-imfo-div p {
   font-family: zurchn-regular;
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -297,18 +298,18 @@ html::-webkit-scrollbar {
   height: 100%;
 }
 .ceo-message-left-div {
-  width: 35%;
+  width: 40%;
   height: 100%;
   flex-direction: column;
   position: relative;
   justify-content: flex-end;
 }
 .ceo-message-img-div {
-  width: 80%;
+  width: 70%;
   height: 100%;
   position: absolute;
   top: -20%;
-  left: 10%;
+  left: 15%;
 }
 .ceo-img {
   width: 100%;
@@ -324,8 +325,23 @@ html::-webkit-scrollbar {
   color: #c59c3d;
   font-family: zurchn-regular;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  flex-direction: column;
 }
+.ceo-message-text-name p {
+  text-align: center;
+  width: 100%;
+  height: 50%;
+}
+.ceo-message-text-name span {
+  text-align: right;
+  width: 60%;
+  height: 20%;
+  font-family: zurchn-regular;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 .ceo-message-right-div {
   width: 63%;
   height: 100%;
@@ -350,25 +366,9 @@ html::-webkit-scrollbar {
   justify-content: flex-start;
   flex-direction: column;
 }
-.our-approach-main-heading {
-  width: 100%;
-  height: 20%;
-  flex-direction: column;
-  text-align: left;
-  align-items: self-start;
-  font-family: zurchn-regular;
-  font-size: 1.2rem;
-  color: #2f345b;
-  line-height: 30px;
-}
-.our-approach-heading {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
 .company-overview {
   width: 100%;
-  height: 10%;
+  height: 15%;
   flex-direction: column;
 }
 .heading-company-overview-div {
@@ -379,24 +379,24 @@ html::-webkit-scrollbar {
   width: 80%;
   height: 100%;
   font-family: zurchn-regular;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #c59c3d;
   justify-content: left;
-}
-
-.heading-company-overview p span {
-  color: #2f345b;
+  align-items: end;
+  margin-bottom: 2rem;
 }
 .info-icon-company-overview {
   width: 20%;
   height: 100%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #2f345b;
   justify-content: right;
+  align-items: end;
+  margin-bottom: 2rem;
 }
 .company-overview-info {
-    display: none;
+  display: none;
   width: 100%;
   height: 40%;
   color: #2f345b;
@@ -406,98 +406,97 @@ html::-webkit-scrollbar {
   line-height: 2rem;
   align-items: self-start;
 }
-.div-border{
-    border-bottom: 3px solid #f2cd74;
+.div-border {
+  border-bottom: 3px solid #f2cd74;
 }
-.add-div-border{
-    border-bottom: 3px solid #f2cd74;
+.add-div-border {
+  border-bottom: 3px solid #f2cd74;
 }
 
 .our-vision {
   width: 100%;
-  height: 10%;
+  height: 15%;
   flex-direction: column;
 }
 
 .heading-our-vision-div {
-    width: 100%;
-    height: 100%;
-  }
-  .heading-our-vision {
-    width: 80%;
-    height: 100%;
-    font-family: zurchn-regular;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #c59c3d;
-    justify-content: left;
-  }
-  
-  .heading-our-vision p span {
-    color: #2f345b;
-  }
-  .info-icon-our-vision {
-    width: 20%;
-    height: 100%;
-    font-size: 2rem;
-    color: #2f345b;
-    justify-content: right;
-  }
-  .our-vision-info {
-      display: none;
-    width: 100%;
-    height: 40%;
-    color: #2f345b;
-    font-family: zurchn-regular;
-    font-size: 1.5rem;
-    text-align: justify;
-    line-height: 2rem;
-    align-items: self-start;
-  }
-
-
+  width: 100%;
+  height: 100%;
+}
+.heading-our-vision {
+  width: 80%;
+  height: 100%;
+  font-family: zurchn-regular;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #c59c3d;
+  justify-content: left;
+  align-items: end;
+  margin-bottom: 2rem;
+}
+.info-icon-our-vision {
+  width: 20%;
+  height: 100%;
+  font-size: 1.5rem;
+  color: #2f345b;
+  justify-content: right;
+  align-items: end;
+  margin-bottom: 2rem;
+}
+.our-vision-info {
+  display: none;
+  width: 100%;
+  height: 40%;
+  color: #2f345b;
+  font-family: zurchn-regular;
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 2rem;
+  align-items: self-start;
+}
 
 .our-mission {
   width: 100%;
-  height: 10%;
+  height: 15%;
   flex-direction: column;
 }
 
 .heading-our-mission-div {
-    width: 100%;
-    height: 100%;
-  }
-  .heading-our-mission {
-    width: 80%;
-    height: 100%;
-    font-family: zurchn-regular;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #c59c3d;
-    justify-content: left;
-  }
-  
-  .heading-our-mission p span {
-    color: #2f345b;
-  }
-  .info-icon-our-mission {
-    width: 20%;
-    height: 100%;
-    font-size: 2rem;
-    color: #2f345b;
-    justify-content: right;
-  }
-  .our-mission-info {
-      display: none;
-    width: 100%;
-    height: 40%;
-    color: #2f345b;
-    font-family: zurchn-regular;
-    font-size: 1.5rem;
-    text-align: justify;
-    line-height: 2rem;
-    align-items: self-start;
-  }
+  width: 100%;
+  height: 100%;
+}
+.heading-our-mission {
+  width: 80%;
+  height: 100%;
+  font-family: zurchn-regular;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #c59c3d;
+  justify-content: left;
+  align-items: end;
+  margin-bottom: 2rem;
+}
+
+.info-icon-our-mission {
+  width: 20%;
+  height: 100%;
+  font-size: 1.5rem;
+  color: #2f345b;
+  justify-content: right;
+  align-items: end;
+  margin-bottom: 2rem;
+}
+.our-mission-info {
+  display: none;
+  width: 100%;
+  height: 40%;
+  color: #2f345b;
+  font-family: zurchn-regular;
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 2rem;
+  align-items: self-start;
+}
 
 .our-approach-right {
   width: 50%;
@@ -653,7 +652,7 @@ html::-webkit-scrollbar {
   height: 5rem;
   background-color: #2f345b;
   font-family: zurchn-regular;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: white;
@@ -727,6 +726,120 @@ html::-webkit-scrollbar {
   width: 100%;
   height: 4rem;
 }
+.full-line {
+  width: 100%;
+  height: 10%;
+  background-color: #2f345b;
+}
+.our-team-main-div {
+  width: 100%;
+  height: 60rem;
+}
+.our-team-div {
+  width: 70%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.our-team-heading-div {
+  width: 100%;
+  height: 10%;
+  flex-direction: column;
+  font-family: zurchn-regular;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #2f345b;
+}
+.our-team-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+.our-team-info-1-div {
+  width: 100%;
+  height: 45%;
+  justify-content: space-between;
+}
+.team-info-1 {
+  width: 17%;
+  height: 65%;
+  border-radius: 1.5rem;
+  position: relative;
+  background-image: url(../Pictures/SHIHD.png);
+  background-size: cover;
+  align-items: self-end;
+}
+.team-info-img-2 {
+  background-image: url(../Pictures/SUNAINA.png);
+  background-size: cover;
+}
+.team-info-img-3 {
+  background-image: url(../Pictures/YOURAJ.jpg);
+  background-size: cover;
+}
+.team-info-img-4 {
+  background-image: url(../Pictures/KOMA.png);
+  background-size: cover;
+}
+.team-info-img-5 {
+  background-image: url(../Pictures/KOMA.png);
+  background-size: cover;
+}
+.team-info-img-6 {
+  background-image: url(../Pictures/amna.png);
+  background-size: cover;
+}
+.team-info-img-7 {
+  background-image: url(../Pictures/Memoona\ Bibi.png);
+  background-size: cover;
+}
+.team-info-img-8 {
+  background-image: url(../Pictures/Ahsan.png);
+  background-size: cover;
+}
+.team-info-img-9 {
+  background-image: url(../Pictures/amna.png);
+  background-size: cover;
+}
+
+.team-info-top-overflow {
+  width: 106%;
+  height: 70%;
+  background-color: #c59c3d;
+  background-image: linear-gradient(#c59c3d, white);
+  position: absolute;
+  top: -3%;
+  right: -3%;
+  border-radius: 2rem 2rem 0rem 0rem;
+  z-index: -99999;
+  display: none;
+}
+.team-detail-div {
+  width: 100%;
+  height: 30%;
+  background-color: #c59c3d;
+  border-radius: 0rem 0rem 1.5rem 1.5rem;
+  font-family: zurchn-regular;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: white;
+  flex-direction: column;
+  display: none;
+}
+.team-posotion {
+  font-weight: normal;
+  font-size: 0.9rem;
+  margin-top: 0.7rem;
+}
+
+.our-team-info-2-div {
+  width: 80%;
+  height: 45%;
+  justify-content: space-between;
+}
+.team-info-2 {
+  width: 21.5%;
+}
 
 .main-div-our-customers {
   width: 100%;
@@ -744,7 +857,7 @@ html::-webkit-scrollbar {
   height: 10%;
   color: #c59c3d;
   font-family: zurchn-regular;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;

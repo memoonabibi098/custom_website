@@ -518,7 +518,7 @@ html::-webkit-scrollbar {
     height: 5rem;
     background-color: #2f345b;
     font-family: zurchn-regular;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: white;
@@ -890,7 +890,7 @@ html::-webkit-scrollbar {
     font-family: zurchn-regular;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     letter-spacing: 2px;
     align-items: start;
 }
@@ -1119,7 +1119,7 @@ html::-webkit-scrollbar {
     height: 10%;
     color: #c59c3d;
     font-family: zurchn-regular;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
