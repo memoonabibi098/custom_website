@@ -1,9 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(function () {
-    const preloader = document.querySelector(".preloader");
-    if (preloader) {
-      preloader.style.display = "none";
-    }
+// document.addEventListener("DOMContentLoaded", function () {
+//   setTimeout(function () {
+//     const preloader = document.querySelector(".preloader");
+//     if (preloader) {
+//       preloader.style.display = "none";
+//     }
 
     // Only apply nav styles on small screens (e.g., width < 768px)
     if (window.innerWidth < 769) {
@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (navIcon) navIcon.style.display = "flex"; // or "block"
     }
 
-  }, 2000);
-});
+//   }, 2000);
+// });
 
 
 
@@ -41,23 +41,6 @@ function msCross() {
     navIcon.style.zIndex = "99999";
   }, 500); // 500ms to match transition
 }
-
-
-
-
-
-
-
-
-
-window.addEventListener("scroll", () => {
-  const scrollTop = window.scrollY;
-  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-  const scrollPercent = (scrollTop / docHeight) * 100;
-  document.getElementById("scroll-progress-bar").style.height =
-    scrollPercent + "%";
-});
-
 
 
 
@@ -264,27 +247,3 @@ function resetAutoSlide() {
 // Initialize
 updateCards();
 startAutoSlide();
-
-
-
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-// When the user scrolls down 100px from the top of the document, show the button
-window.onscroll = function () {
-  if (
-    document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 100
-  ) {
-    scrollToTopBtn.style.display = "flex";
-  } else {
-    scrollToTopBtn.style.display = "none";
-  }
-};
-
-// When the user clicks the button, scroll to the top of the document
-scrollToTopBtn.onclick = function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
