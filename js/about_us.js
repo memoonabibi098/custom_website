@@ -67,3 +67,244 @@ $(".team-info-1").on("mouseleave", function() {
   $detail.stop(true, true).animate({ height: "hide", opacity: 0 }, 300);
 });
 
+
+
+
+// var swiper = new Swiper(".mySwiper", {
+//   slidesPerView: 4,
+//   spaceBetween: 30,
+//   loop: true,
+//   autoplay: {
+//     delay: 1500, // 3 seconds between slides
+//     disableOnInteraction: false, // keeps autoplay after user interacts
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   breakpoints: {
+//     1920: {
+//       slidesPerView: 4,
+//     },
+//     768: {
+//       slidesPerView: 2,
+//     },
+//     480: {
+//       slidesPerView: 1,
+//     }
+//   }
+// });
+
+
+
+// $(document).ready(function () {
+//   const $track = $('.slider-track');
+//   const $slides = $('.slide');
+//   const visibleSlides = 4;
+//   const slideWidth = $slides.outerWidth(true);
+//   const totalSlides = $slides.length;
+//   const totalPages = totalSlides; // Because we will clone slides
+
+//   let currentIndex = 0;
+//   let interval;
+
+//   // Clone slides for infinite effect
+//   $slides.slice(0, visibleSlides).clone().appendTo($track); // clone first 4 to the end
+//   $slides.slice(-visibleSlides).clone().prependTo($track); // clone last 4 to the start
+
+//   // Adjust track position to show real first slide
+//   const startIndex = visibleSlides;
+//   $track.css('transform', `translateX(-${slideWidth * startIndex}px)`);
+
+//   currentIndex = startIndex;
+
+//   function goToSlide(index) {
+//     $track.css('transition', 'transform 0.5s ease-in-out');
+//     $track.css('transform', `translateX(-${index * slideWidth}px)`);
+//     currentIndex = index;
+//   }
+
+//   function nextSlide() {
+//     goToSlide(++currentIndex);
+
+//     // Reset position if at end clone
+//     if (currentIndex === totalSlides + visibleSlides) {
+//       setTimeout(() => {
+//         $track.css('transition', 'none');
+//         $track.css('transform', `translateX(-${slideWidth * visibleSlides}px)`);
+//         currentIndex = visibleSlides;
+//       }, 500); // must match transition time
+//     }
+//   }
+
+//   function prevSlide() {
+//     goToSlide(--currentIndex);
+
+//     // Reset if at start clone
+//     if (currentIndex === 0) {
+//       setTimeout(() => {
+//         $track.css('transition', 'none');
+//         $track.css('transform', `translateX(-${slideWidth * totalSlides}px)`);
+//         currentIndex = totalSlides;
+//       }, 500);
+//     }
+//   }
+
+//   $('.arrow.right').click(nextSlide);
+//   $('.arrow.left').click(prevSlide);
+
+//   function startAutoSlide() {
+//     interval = setInterval(nextSlide, 2000);
+//   }
+
+//   function stopAutoSlide() {
+//     clearInterval(interval);
+//   }
+
+//   $('.slider-container').hover(stopAutoSlide, startAutoSlide);
+
+//   startAutoSlide();
+// });
+
+
+
+
+
+// $(document).ready(function () {
+//   const $track = $('.our-team-info-1-div > div'); // This is the container that holds team-info-1 blocks
+//   const $slides = $track.find('.team-info-1');
+//   const visibleSlides = 4;
+//   const slideWidth = $slides.outerWidth(true);
+//   const totalSlides = $slides.length;
+//   const totalPages = totalSlides;
+
+//   let currentIndex = 0;
+//   let interval;
+
+//   // Clone slides for infinite effect
+//   $slides.slice(0, visibleSlides).clone().appendTo($track);
+//   $slides.slice(-visibleSlides).clone().prependTo($track);
+
+//   // Adjust track position to show real first slide
+//   const startIndex = visibleSlides;
+//   $track.css('transform', `translateX(-${slideWidth * startIndex}px)`);
+//   currentIndex = startIndex;
+
+//   function goToSlide(index) {
+//     $track.css('transition', 'transform 0.5s ease-in-out');
+//     $track.css('transform', `translateX(-${index * slideWidth}px)`);
+//     currentIndex = index;
+//   }
+
+//   function nextSlide() {
+//     goToSlide(++currentIndex);
+//     if (currentIndex === totalSlides + visibleSlides) {
+//       setTimeout(() => {
+//         $track.css('transition', 'none');
+//         $track.css('transform', `translateX(-${slideWidth * visibleSlides}px)`);
+//         currentIndex = visibleSlides;
+//       }, 500);
+//     }
+//   }
+
+//   function prevSlide() {
+//     goToSlide(--currentIndex);
+//     if (currentIndex === 0) {
+//       setTimeout(() => {
+//         $track.css('transition', 'none');
+//         $track.css('transform', `translateX(-${slideWidth * totalSlides}px)`);
+//         currentIndex = totalSlides;
+//       }, 500);
+//     }
+//   }
+
+//   // Update these selectors as needed to match your actual arrow elements
+//   $('.arrow.right').click(nextSlide);
+//   $('.arrow.left').click(prevSlide);
+
+//   function startAutoSlide() {
+//     interval = setInterval(nextSlide, 2000);
+//   }
+
+//   function stopAutoSlide() {
+//     clearInterval(interval);
+//   }
+
+//   // Change this selector if you want hover effects over a specific parent
+//   $('.our-team-info-1-div').hover(stopAutoSlide, startAutoSlide);
+
+//   startAutoSlide();
+// });
+
+
+
+
+$(document).ready(function () {
+  const $track = $('.our-team-info-1-div'); // This is the container that holds team-info-1 blocks
+  const $slides = $track.find('.team-info-1');
+  const visibleSlides = 4; // Number of visible slides
+  const slideWidth = $slides.outerWidth(true); // Get the width of each slide
+  const totalSlides = $slides.length; // Get the total number of slides
+
+  let currentIndex = 0;
+  let interval;
+
+  // Clone slides for infinite effect (add the first few slides to the end and the last few to the start)
+  $slides.slice(0, visibleSlides).clone().appendTo($track);
+  $slides.slice(-visibleSlides).clone().prependTo($track);
+
+  // Adjust track position to show the real first slide
+  const startIndex = visibleSlides;
+  $track.css('transform', `translateX(-${slideWidth * startIndex}px)`);
+
+  function goToSlide(index) {
+    $track.css('transition', 'transform 0.1s ease-in-out');
+    $track.css('transform', `translateX(-${index * slideWidth}px)`);
+    currentIndex = index;
+  }
+
+  function nextSlide() {
+    goToSlide(++currentIndex);
+    if (currentIndex === totalSlides + visibleSlides) {
+      setTimeout(() => {
+        $track.css('transition', 'none');
+        $track.css('transform', `translateX(-${slideWidth * visibleSlides}px)`);
+        currentIndex = visibleSlides;
+      }, 500);
+    }
+  }
+
+  function prevSlide() {
+    goToSlide(--currentIndex);
+    if (currentIndex === 0) {
+      setTimeout(() => {
+        $track.css('transition', 'none');
+        $track.css('transform', `translateX(-${slideWidth * totalSlides}px)`);
+        currentIndex = totalSlides;
+      }, 500);
+    }
+  }
+
+  // Add the arrow navigation functionality
+  $('.arrow.right').click(nextSlide);
+  $('.arrow.left').click(prevSlide);
+
+  // Auto slide functionality
+  function startAutoSlide() {
+    interval = setInterval(nextSlide, 2000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(interval);
+  }
+
+  // Start auto slide on hover out, stop on hover
+  $track.hover(stopAutoSlide, startAutoSlide);
+
+  // Start auto sliding
+  startAutoSlide();
+});

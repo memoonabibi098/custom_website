@@ -733,7 +733,7 @@ html::-webkit-scrollbar {
 }
 .our-team-main-div {
   width: 100%;
-  height: 60rem;
+  height: 40rem;
 }
 .our-team-div {
   width: 70%;
@@ -755,18 +755,19 @@ html::-webkit-scrollbar {
   margin-bottom: 1.2rem;
 }
 .our-team-info-1-div {
-  width: 100%;
-  height: 45%;
+  width: 500%;
+  height: 100%;
   justify-content: space-between;
 }
 .team-info-1 {
-  width: 17%;
+  width: 23%;
   height: 65%;
   border-radius: 1.5rem;
   position: relative;
   background-image: url(../Pictures/SHIHD.png);
   background-size: cover;
   align-items: self-end;
+  transition: transform 0.1s ease-in-out;
 }
 .team-info-img-2 {
   background-image: url(../Pictures/SUNAINA.png);
@@ -801,6 +802,13 @@ html::-webkit-scrollbar {
   background-size: cover;
 }
 
+.arrow {
+  cursor: pointer;
+  /* Add your styles for the arrows here */
+}
+
+
+
 .team-info-top-overflow {
   width: 106%;
   height: 70%;
@@ -830,15 +838,6 @@ html::-webkit-scrollbar {
   font-weight: normal;
   font-size: 0.9rem;
   margin-top: 0.7rem;
-}
-
-.our-team-info-2-div {
-  width: 80%;
-  height: 45%;
-  justify-content: space-between;
-}
-.team-info-2 {
-  width: 21.5%;
 }
 
 .main-div-our-customers {
