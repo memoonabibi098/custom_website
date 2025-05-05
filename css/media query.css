@@ -41,6 +41,9 @@
         width: 90%;
         height: 70%;
     }
+    .choose-us-title{
+        font-size: 1.2rem;
+    }
 
     .choose-us-counter-div {
         width: 95%;
@@ -48,7 +51,7 @@
     }
     .choose-us-description {
         height: 40%;
-        line-height: 25px;
+        line-height: 1.5rem;
     }
 
     .sponsor-1 {
@@ -74,9 +77,12 @@
     .blog-detail-div-box {
         width: 90%;
     }
-
+    .by-author-div{
+        font-size: 1.2rem;
+    }
     .comments-div {
         width: 19%;
+        font-size: 1.2rem;
     }
 
     .blog-button-view-div {
@@ -99,7 +105,7 @@
     }
 
     .left-footer-center-btn {
-        right: 9%;
+        right: 20%;
     }
     .footer-center-heading-div {
         width: 65%;
@@ -110,7 +116,7 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 980px) {
-    /*tablet [601px -> 1000px]*/
+    /*tablet [769px -> 980px]*/
 
     #scroll-progress-bar {
         display: none;
@@ -178,15 +184,20 @@
     .btn-div {
         width: 16%;
     }
+    .choose-us-div{
+        height: 25rem;
+    }
 
     .choose-us-heading-div {
         height: 30%;
         font-size: 2rem;
     }
-
+    .choose-us-heading{
+        height: 20%;
+    }
     .choose-us-benefit-ul {
         width: 95%;
-        height: 70%;
+        height: 100%;
     }
 
     .choose-us-benefit-ul-li {
@@ -195,7 +206,7 @@
     }
 
     .choose-us-p-div {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .choose-us-counter-div {
@@ -210,8 +221,8 @@
 
     .choose-us-description {
         width: 90%;
-        font-size: 0.7rem;
-        line-height: 15px;
+        font-size: 0.8rem;
+        line-height: 1rem;
         align-items: self-start;
     }
 
@@ -271,8 +282,8 @@
     }
 
     .services-detail {
-        font-size: 1.3rem;
-        line-height: 30px;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
     }
 
     .services-dots {
@@ -300,11 +311,11 @@
     }
 
     .by-author-div {
-        width: 25%;
+        width: 30%;
     }
 
     .comments-div {
-        width: 28%;
+        width: 35%;
     }
 
     .blog-detail-heading-div {
@@ -343,11 +354,20 @@
     .div-our-customers {
         width: 90%;
     }
-
+    .our-customers-heading p{
+        width: 70%;
+        box-sizing: border-box;
+        padding-left: 2.5rem;
+    }
     .our-customers-bottom {
         width: 95%;
     }
 
+    .star-cls{
+        font-size: 1.2rem;
+        justify-content: center;
+        align-items: center;
+    }
     .our-customers-right {
         font-size: 1.5rem;
         line-height: 35px;
@@ -386,7 +406,7 @@
     .footer-right-contact-detail {
         width: 85%;
         font-size: 1.2rem;
-        line-height: 25px;
+        line-height: 1.5rem;
     }
     .footer-center-div-1-1 {
         width: 25%;
@@ -395,7 +415,7 @@
 
 @media only screen and (max-width: 768px) {
 
-    /*Big smartphones [426px -> 600px]*/
+    /*smartphones [768px]*/
     #scroll-progress-bar {
         display: none;
     }
@@ -409,7 +429,7 @@
     }
 
     .hero-bg-img {
-        height: 25rem;
+        height: 20rem;
         background-image: url(../Pictures/picture-1-lg.jpg);
         background-size: cover;
         position: absolute;
@@ -418,15 +438,15 @@
     }
 
     .main-div {
-        height: 25rem;
+        height: 20rem;
     }
 
     .main-navbar {
-        height: 15%;
+        height: 20%;
         color: white;
         font-size: 2rem;
         box-sizing: border-box;
-        padding-right: 20px;
+        padding-right: 1.25rem;
         align-items: center;
     }
 
@@ -482,7 +502,7 @@
         font-size: 1.8rem;
         justify-content: right;
         box-sizing: border-box;
-        padding-right: 20px;
+        padding-right: 1.25rem;
     }
 
     .sm-nav-main-div-ul {
@@ -502,7 +522,7 @@
         width: 100%;
         height: 10%;
         box-sizing: border-box;
-        padding: 20px;
+        padding: 1.25rem;
         display: flex;
         align-items: center;
     }
@@ -544,8 +564,8 @@
     .contact-nav-div-ul-li{
         color: #2F345B;
         font-family: zurchn-regular;
-        font-size: 0.9rem;
-        line-height: 22px;
+        font-size: 0.8rem;
+        line-height: 1rem;
     }
 
 
@@ -568,7 +588,7 @@
         height: 25rem;
         position: absolute;
         top: 28rem;
-        left: 0px;
+        left: 0rem;
     }
     .search-bar-div-ms {
         display: flex;
@@ -698,7 +718,7 @@
         font-size: 1.7rem;
     }
     .services-detail {
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 1.5rem;
     }
     .services-right {
@@ -748,7 +768,7 @@
     }
     .blog-detail-heading-div {
         height: 10%;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .by-author-div {
         width: 40%;
@@ -779,7 +799,7 @@
     }
     .blog-button-view-div {
         width: 75%;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .blog-buttom-view{
         justify-content: center;
@@ -787,7 +807,7 @@
     }
     .blog-buttom-time {
         width: 55%;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
     .blog-button-time-div {
         width: 70%;
@@ -802,7 +822,9 @@
         width: 90%;
     }
     .our-customers-heading p {
-        width: 70%;
+        width: 90%;
+        justify-content: center;
+        display: flex;
     }
     .our-customers-heading {
         height: 15%;
@@ -880,7 +902,7 @@
     .left-footer-center-btn {
         font-size: 1rem;
         border-radius: 5px;
-        right: -5%;
+        right: -1%;
         bottom: 30%;
     }
 

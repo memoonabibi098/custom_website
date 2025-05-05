@@ -1,34 +1,4 @@
 @font-face {
-    font-family: zurch-narrow;
-    src: url("../fonts/zurch.ttf");
-}
-
-@font-face {
-    font-family: zurchbci-NBI;
-    src: url("../fonts/zurchbci.ttf");
-}
-
-@font-face {
-    font-family: zurchci-NI;
-    src: url("../fonts/zurchci.ttf");
-}
-
-@font-face {
-    font-family: zurchk-bold;
-    src: url("../fonts/zurchk.ttf");
-}
-
-@font-face {
-    font-family: zurchk-BI;
-    src: url("../fonts/zurchki.ttf");
-}
-
-@font-face {
-    font-family: zurchl-light;
-    src: url("../fonts/zurchl.ttf");
-}
-
-@font-face {
     font-family: zurchn-regular;
     src: url("../fonts/zurchn.ttf");
 }
@@ -121,6 +91,34 @@ html::-webkit-scrollbar {
     /* Your main color */
     z-index: 9989;
     transition: height 1s ease-out;
+}
+
+.scroll-div {
+    height: 60px;
+    width: 60px;
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.scroll-to-top {
+    height: 60px;
+    width: 60px;
+    background: #c59c3d;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
+}
+
+.scroll-to-top img {
+    width: 80%;
 }
 
 .hero-bg-img {
@@ -269,7 +267,7 @@ html::-webkit-scrollbar {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: 0px 20px;
+    padding: 0px 1.25rem;
     justify-content: space-between;
     align-items: center;
     border: none;
@@ -289,10 +287,9 @@ html::-webkit-scrollbar {
 }
 
 .dropdown-icon {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     background-image: url("../Pictures/Polygon-1.png");
-    /* You can change this */
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -305,7 +302,7 @@ html::-webkit-scrollbar {
     right: 0;
     background: #f2cd74;
     border-radius: 0.6rem;
-    max-height: 200px;
+    max-height: 12.5rem;
     overflow: hidden;
     display: none;
     z-index: 99;
@@ -346,8 +343,8 @@ html::-webkit-scrollbar {
 }
 
 .option img {
-    width: 20px;
-    height: 14px;
+    width: 1.25rem;
+    height: 1rem;
     object-fit: cover;
     border-radius: 2px;
 }
@@ -361,8 +358,8 @@ html::-webkit-scrollbar {
 
 .selectedFlag {
     display: none;
-    width: 20px;
-    height: 14px;
+    width: 1.25rem;
+    height: 1rem;
     vertical-align: middle;
     margin-right: 8px;
 }
@@ -396,7 +393,8 @@ html::-webkit-scrollbar {
 .choose-us-heading-div {
     width: 100%;
     height: 50%;
-    font-family: zurchk-bold;
+    font-family: zurchn-regular;
+    font-weight: bold;
     font-size: 2.5rem;
     color: #2f345b;
     text-transform: uppercase;
@@ -454,10 +452,10 @@ html::-webkit-scrollbar {
     width: 100%;
     height: 25%;
     flex-direction: column;
-    font-family: zurchl-light;
+    font-family: zurchn-regular;
     font-weight: bold;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -466,8 +464,7 @@ html::-webkit-scrollbar {
     height: 20%;
     font-family: zurchn-regular;
     font-size: 1rem;
-    letter-spacing: 0px;
-    line-height: 30px;
+    line-height: 1.5rem;
     color: white;
     text-align: center;
 }
@@ -490,6 +487,8 @@ html::-webkit-scrollbar {
     font-family: zurchn-regular;
     text-transform: uppercase;
     font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
     color: #2f345b;
 }
 
@@ -504,7 +503,7 @@ html::-webkit-scrollbar {
 .star-cls {
     background-color: #2f345b;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -545,7 +544,7 @@ html::-webkit-scrollbar {
     width: 95%;
     height: 95%;
     background-color: #c59c3d;
-    border-radius: 15px;
+    border-radius: 1rem;
 }
 
 .sponsor-1-1:hover,
@@ -573,7 +572,7 @@ html::-webkit-scrollbar {
     width: 95%;
     height: 95%;
     background-color: #c59c3d;
-    border-radius: 15px;
+    border-radius: 1rem;
 }
 
 .sponsor-1-1-text {
@@ -583,7 +582,7 @@ html::-webkit-scrollbar {
     font-size: 1rem;
     text-transform: capitalize;
     color: white;
-    line-height: 2rem;
+    line-height: 1.5rem;
     text-align: center;
     padding-right: 10px;
 }
@@ -594,7 +593,7 @@ html::-webkit-scrollbar {
 }
 
 .services-left-angle {
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: bold;
     display: none;
 }
@@ -631,7 +630,7 @@ html::-webkit-scrollbar {
 
 .services-img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     box-shadow: 0px 0px 8px 1px #2f345b;
 }
 
@@ -645,7 +644,7 @@ html::-webkit-scrollbar {
     width: 100%;
     height: 95%;
     background-color: #c59c3d;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     display: flex;
     align-items: flex-end;
     box-sizing: border-box;
@@ -674,17 +673,17 @@ html::-webkit-scrollbar {
     text-transform: uppercase;
     text-align: center;
     box-sizing: border-box;
-    padding-bottom: 25px;
+    padding-bottom: 1.5rem;
 }
 
 .services-detail {
     font-family: zurchn-regular;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: white;
     box-sizing: border-box;
-    padding: 0px 25px;
+    padding: 0px 1.5rem;
     text-align: justify;
-    line-height: 40px;
+    line-height: 2.2rem;
 }
 
 .services-right {
@@ -704,8 +703,8 @@ html::-webkit-scrollbar {
 }
 
 .dot-1 {
-    width: 15px;
-    height: 15px;
+    width: 1rem;
+    height: 1rem;
     background-color: #f2cd74;
     transform: rotate(45deg);
     border-radius: 2px;
@@ -906,12 +905,12 @@ html::-webkit-scrollbar {
     height: 100%;
     flex-direction: column;
     background-color: #c59c3d;
-    border-radius: 1.2rem;
+    border-radius: 1.5rem;
     box-shadow: -7px 0px 0px 0px #2f345b;
 }
 
 .blog-left-angle {
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: bold;
     display: none;
 }
@@ -934,7 +933,7 @@ html::-webkit-scrollbar {
 .blog-img-div {
     width: 80%;
     height: 80%;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     background-image: url(../Pictures/image-41.png);
     background-size: cover;
 }
@@ -1004,18 +1003,18 @@ html::-webkit-scrollbar {
     justify-content: flex-start;
     color: white;
     font-family: zurchn-regular;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
     letter-spacing: 1.5px;
 }
 
 .comments-div {
-    width: 16%;
+    width: 19%;
     height: 100%;
     justify-content: space-between;
     color: white;
     font-family: zurchn-regular;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
 }
 
@@ -1132,7 +1131,7 @@ html::-webkit-scrollbar {
 
 .our-customers-text {
     width: 100%;
-    height: 90%;
+    height: 65%;
     display: flex;
 }
 
@@ -1143,11 +1142,11 @@ html::-webkit-scrollbar {
 }
 
 .circle-img {
-    width: 200px;
+    width: 190px;
     height: 200px;
     background-image: url(../Pictures/image\ 3.png);
     background-size: cover;
-    border-radius: 100px;
+    border-radius: 15rem;
 }
 
 .our-customers-star-cls {
@@ -1166,14 +1165,13 @@ html::-webkit-scrollbar {
     width: 74%;
     height: 100%;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 1.5rem;
     font-family: zurchn-regular;
     color: #2f345b;
     font-size: 1.8rem;
-    line-height: 45px;
+    line-height: 2.5rem;
     text-align: justify;
 }
-
 .our-customers-bottom-div {
     width: 100%;
     height: 5rem;
@@ -1184,7 +1182,7 @@ html::-webkit-scrollbar {
     height: 100%;
     color: #2f345b;
     font-family: zurchn-regular;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     justify-content: space-between;
 }
 
@@ -1209,7 +1207,7 @@ html::-webkit-scrollbar {
 
 .footer-box {
     width: 80%;
-    height: 95%;
+    height: 90%;
     flex-direction: column;
 }
 
@@ -1258,7 +1256,7 @@ html::-webkit-scrollbar {
     border-bottom: 3px solid #2f345b;
     color: white;
     font-family: zurchn-regular;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .left-footer-center input:focus,
@@ -1282,7 +1280,7 @@ input:focus {
     padding: 5px 10px;
     border-radius: 10px;
     position: absolute;
-    right: 28%;
+    right: 37%;
     bottom: 45%;
 }
 
@@ -1317,7 +1315,6 @@ input:focus {
     color: #2f345b;
     font-size: 2rem;
     font-weight: bold;
-
 }
 
 .footer-center-heading-div {
@@ -1419,8 +1416,8 @@ input:focus {
     background-color: #f2cd74;
     color: #2f345b;
     font-size: 1.6rem;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1433,32 +1430,4 @@ input:focus {
     background-color: #f2cd74;
     color: #c59c3d;
     font-family: zurchn-regular;
-}
-
-.scroll-div {
-    height: 60px;
-    width: 60px;
-    display: block;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-}
-
-.scroll-to-top {
-    height: 60px;
-    width: 60px;
-    background: #c59c3d;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: opacity 0.3s;
-}
-
-.scroll-to-top:hover {
-    opacity: 1;
-}
-
-.scroll-to-top img {
-    width: 80%;
 }
