@@ -3,7 +3,7 @@
     /*laptop and small lcd [1001px -> 1200px]*/
     .hero-bg-img {
         height: 40rem;
-        background-image: url(../Pictures/about\ us\ cover\ pic.png);
+        background-image: url(../Pictures/picture-1-1280.png);
         background-size: cover;
     }
 
@@ -29,32 +29,10 @@
     .header-left-box {
         width: 90%;
     }
-    .ceo-message-main-div {
-        height: 57rem;
-    }
-    .ceo-message-top-heading-div {
-        width: 90%;
-    }
-    .ceo-message-bottom-box {
-        width: 90%;
-    }
-    .ceo-message-img-div {
-        width: 80%;
-        left: 10%;
-    }
-    .ceo-message-top-imfo-div {
-        justify-content: flex-end;
-    }
-    .ceo-massage-top-info-box{
-        width: 40%;
-        height: 100%;
-        align-items: end;
-        justify-content: flex-end;
-    }
-    .our-approach-box {
-        width: 90%;
-    }
 
+    .search-box {
+        width: 90%;
+    }
     .choose-us-benefit {
         height: 65%;
     }
@@ -82,9 +60,39 @@
     .sponsor-1-1-img-icon {
         height: 70%;
     }
-    .our-team-div {
+
+    .services-div {
+        width: 100%;
+        height: 95%;
+    }
+
+    .services-dots-div {
+        height: 2rem;
+    }
+
+    .blog-div {
+        width: 100%;
+    }
+
+    .blog-detail-div-box {
         width: 90%;
     }
+    .by-author-div{
+        font-size: 1.2rem;
+    }
+    .comments-div {
+        width: 19%;
+        font-size: 1.2rem;
+    }
+
+    .blog-button-view-div {
+        width: 30%;
+    }
+
+    .blog-button-time-div {
+        width: 70%;
+    }
+
     .div-our-customers {
         width: 90%;
     }
@@ -108,25 +116,25 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 980px) {
-    /*tablet [601px -> 1000px]*/
+    /*tablet [769px -> 980px]*/
 
     #scroll-progress-bar {
         display: none;
     }
 
     .hero-bg-img {
-        height: 25rem;
-        background-image: url(../Pictures/about\ us\ cover\ pic-1.png);
+        height: 40rem;
+        background-image: url(../Pictures/picture-1-1280.png);
         background-size: cover;
     }
 
     .main-div {
-        height: 25rem;
+        height: 40rem;
         background-color: hsl(233deg 32% 27% / 50%);
     }
 
     .main-navbar {
-        height: 20%;
+        height: 12%;
     }
 
     .navbar {
@@ -157,60 +165,29 @@
         width: 7rem;
     }
 
-    .ceo-message-top-heading-div {
-        width: 90%;
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-    .ceo-message-top-heading-p {
-        font-size: 2rem;
-        padding-bottom: 1rem;
-    }
-    .ceo-message-bottom-box {
-        width: 90%;
-    }
-    .ceo-message-img-div {
-        width: 100%;
-        height: 95%;
-        left: -7%;
-    }
-    .ceo-message-text-name {
-        width: 90%;
-        height: 25%;
-    }
-    .ceo-message-right-div {
-        width: 63%;
-        font-size: 0.9rem;
-        line-height: 1.5rem;
+    .search-box {
+        width: 95%;
     }
 
-    .ceo-message-top-imfo-div{
-        align-items: flex-end;
+    .lable {
+        font-size: 1rem;
     }
-    .ceo-massage-top-info-box{
-        width: 77%;
-        height: 50%;
+
+    .custom-select-box {
+        font-size: 1rem;
     }
-    .our-approach-box {
-        width: 90%;
+
+    .label-select-div {
+        width: 28%;
     }
-    .our-approach-left {
-        width: 55%;
-    }
-    .company-overview-info {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-    }
-    .our-approach-right
-    {
-        width: 40%;
-    }
-    .our-approach-img-div {
-        width: 90%;
+
+    .btn-div {
+        width: 16%;
     }
     .choose-us-div{
         height: 25rem;
     }
+
     .choose-us-heading-div {
         height: 30%;
         font-size: 2rem;
@@ -245,7 +222,7 @@
     .choose-us-description {
         width: 90%;
         font-size: 0.8rem;
-        line-height: 15px;
+        line-height: 1rem;
         align-items: self-start;
     }
 
@@ -282,45 +259,110 @@
         font-size: 0.8rem;
         line-height: 1.5rem;
     }
+
+    .services-div {
+        width: 100%;
+        height: 90%;
+    }
+
+    .services-main-div {
+        height: 30rem;
+    }
+
+    .services-text-box-div {
+        height: 75%;
+    }
+
+    .services-text-div {
+        height: 90%;
+    }
+
+    .services-heading {
+        font-size: 1.5rem;
+    }
+
+    .services-detail {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+
+    .services-dots {
+        width: 18%;
+    }
+
+    .services-dots-div {
+        height: 2rem;
+    }
+
+    .ex-blog-line {
+        height: 5rem;
+    }
+
+    .blog-main-div {
+        height: 25rem;
+    }
+
+    .blog-div {
+        width: 100%;
+    }
+
+    .blog-detail-div-box {
+        width: 90%;
+    }
+
+    .by-author-div {
+        width: 30%;
+    }
+
+    .comments-div {
+        width: 35%;
+    }
+
+    .blog-detail-heading-div {
+        font-size: 1.5rem;
+    }
+
+    .blog-detail-text {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+
+    .blog-bottom-div {
+        height: 15%;
+    }
+
+    .blog-buttom-view {
+        width: 53%;
+    }
+
+    .blog-button-view-div {
+        width: 60%;
+    }
+
+    .blog-buttom-time {
+        width: 40%;
+    }
+
+    .blog-button-time-div {
+        width: 80%;
+    }
+
     .full-line {
         height: 6%;
     }
-    .our-team-main-div {
-        height: 25rem;
-    }
-    .our-team-div {
-        width: 90%;
-        height: 90%;
-    }
-    .our-team-heading-div {
-        text-align: center;
-    }
-
 
     .div-our-customers {
         width: 90%;
     }
-    .our-team-heading-div{
-        font-size: 1rem;
-    }
-    .team-detail-div {
-        font-size: 1rem;
-    }
-    .team-posotion {
-        font-weight: normal;
-        font-size: 0.6rem;
-    }
-    .our-team-heading {
-        font-size: 2rem;
-    }
     .our-customers-heading p{
         width: 70%;
         box-sizing: border-box;
-        padding-left: 6rem;
+        padding-left: 2.5rem;
     }
     .our-customers-bottom {
         width: 95%;
     }
+
     .star-cls{
         font-size: 1.2rem;
         justify-content: center;
@@ -364,7 +406,7 @@
     .footer-right-contact-detail {
         width: 85%;
         font-size: 1.2rem;
-        line-height: 25px;
+        line-height: 1.5rem;
     }
     .footer-center-div-1-1 {
         width: 25%;
@@ -383,12 +425,12 @@
     .ms-header-box{
         display: flex;
         width: 100%;
-        height: 95rem;
+        height: 55rem;
     }
 
     .hero-bg-img {
         height: 20rem;
-        background-image: url(../Pictures/about\ us\ cover\ pic-1.png);
+        background-image: url(../Pictures/picture-1-lg.jpg);
         background-size: cover;
         position: absolute;
         top: 0px;
@@ -528,118 +570,62 @@
 
 
     .main-div-p {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         text-align: center;
-        letter-spacing: 0.2rem;
+        line-height: 2rem;
     }
 
     .header-right {
         display: none;
     }
-    .ceo-message-main-div{
+
+    .search-bar-div {
+        display: none;
+    }
+
+    .ms-search-bar-div {
+        width: 100%;
+        height: 25rem;
         position: absolute;
-        top: 20rem;
-        height: 75rem;
-    }   
-
-    .ceo-message-top-div {
-        width: 100%;
-        height: 25%;
-    }    
-    .ceo-message-top-heading-div {
+        top: 28rem;
+        left: 0rem;
+    }
+    .search-bar-div-ms {
+        display: flex;
+        height: 100%;
         width: 90%;
-        height: 70%;
-        font-size: 0.8rem;
-        text-align: center;
-        line-height: 1rem;
+        background-color: #c59c3d;
+        border-radius: 1rem;
+        position: relative;
     }
-    .ceo-message-top-heading-p {
-        font-family: zurchn-regular;
-        color: white;
-        font-size: 1.5rem;
-        padding-bottom: 0.8rem;
-        line-height: 1.5rem;
-    }
-
-    .ceo-message-top-imfo-div {
+    .search-box {
         width: 100%;
-        height: 30%;
-        justify-content: flex-end;
-    }
-    .ceo-message-top-imfo-div p {
-        font-family: zurchn-regular;
-        color: white;
-        font-size: 2rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-    .ceo-message-bottom-div {
-        height: 75%;
-    }
-    .ceo-message-bottom-box {
-        width: 90%;
+        height: 100%;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: space-evenly;
+        bottom: 0%;
+        align-items: center;
     }
-    .ceo-message-left-div {
-        width: 100%;
-        height: 40%;
+    .select {
         justify-content: center;
     }
-
-    .ceo-message-img-div {
-        width: 70%;
+    .custom-select-wrapper {
+        width: 90%;
         height: 80%;
-        position: static;
     }
 
-    .ceo-message-text-name p {
-        text-align: center;
-    }
-    .ceo-message-text-name {
-        width: 75%;
-        height: 25%;
-        font-size: 1.5rem;
-    }
-    .ceo-message-text-name span {
-        font-size: 1rem;
-        width: 70%;
-    }
-    .ceo-message-right-div {
-        width: 90%;
-        height: 55%;
-        font-family: zurchn-regular;
-        font-size: 0.9rem;
-        text-align: justify;
-        line-height: 1rem;
-        color: #2f345b;
-    }
-    
-    
-    .our-approach-box {
-        width: 90%;
-        height: 100%;
-        flex-direction: column;
-    }
-    .our-approach-left {
+    .label-select-div {
         width: 100%;
-        height: 45%;
+        height: 20%;
     }
-    .heading-company-overview,
-    .heading-our-vision,
-    .heading-our-mission{
-        font-size: 1.5rem;
+    .custom-select-box{
+        border-radius: 0.5rem;
     }
-
-    .our-approach-right{
-        width: 90%;
-        height: 50%;
-    }
-    .our-approach-img-div {
-        width: 100%;
-        height: 100%;
-
+    .btn-div {
+        width: 50%;
+        height: 10%;
+        border-radius: 1rem;
+        border-radius: 10px;
     }
     .choose-us-div {
         width: 100%;
@@ -712,34 +698,123 @@
         width: 70%;
         line-height: 1.5rem;
     }
-    .our-team-div {
+    .services-main-div {
+        height: 30rem;
+    }
+    .services-div {
+        width: 100%;
+    }
+    .services-left {
         width: 90%;
     }
 
-    .our-team-heading-div {
-        width: 100%;
-        height: 25%;
-        font-size: 1rem;
-        text-align: center;
+    .services-text-div {
+        height: 85%;
     }
-    .our-team-heading {
-        font-size: 2rem;
-    }
-    .our-team-info-1-div {
-        width: 100%;
-        height: 75%;
-        justify-content: center;
-    }
-    .team-info-1 {
-        width: 85%;
+    .services-text-box-div {
         height: 80%;
     }
-    .team-info-img-2,
-    .team-info-img-3,
-    .team-info-img-4{
+    .services-heading {
+        font-size: 1.7rem;
+    }
+    .services-detail {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .services-right {
         display: none;
     }
+    .services-dots {
+        width: 30%;
+    }
+    .ex-blog-line { 
+        height: 3rem;
+    }
+    .blog-main-div {
+        height: 60rem;
+    }
+    .blog-heading-div {
+        height: 10%;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        align-items: center;
+    }
+    .blog-div {
+        width: 90%;
+    }
+    .blog-detail-div {
+        height: 90%;
+    }
+    .blog-detail-div-box {
+        width: 90%;
+        border-radius: 1rem;
+    }
+    .blog-top-div {
+        height: 85%;
+        flex-direction: column;
 
+    }
+    .blog-left-div {
+        width: 60%;
+        height: 30%;
+    }
+    .blog-img-div {
+        width: 100%;
+        height: 100%;
+    }
+    .blog-right-div {
+        width: 90%;
+        height: 60%;
+    }
+    .blog-detail-heading-div {
+        height: 10%;
+        font-size: 1.2rem;
+    }
+    .by-author-div {
+        width: 40%;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    .comments-div {
+        width: 50%;
+        font-size: 1rem;
+    }
+    .blog-detail-text {
+        height: 70%;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .blog-bottom-div {  
+        height: 15%;
+        flex-direction: column;
+    }
+    .blog-bottom-left-div {
+        width: 90%;
+        height: 45%;
+        font-size: 1rem;
+    }
+    .blog-bottom-right-div {
+        width: 90%;
+        height: 45%;
+    }
+    .blog-button-view-div {
+        width: 75%;
+        font-size: 0.9rem;
+    }
+    .blog-buttom-view{
+        justify-content: center;
+        width: 55%;
+    }
+    .blog-buttom-time {
+        width: 55%;
+        font-size: 0.9rem;
+    }
+    .blog-button-time-div {
+        width: 70%;
+    }
+    .blog-review-line {
+        height: 3rem;
+    }
     .main-div-our-customers {
         height: 25rem;
     }
@@ -747,7 +822,7 @@
         width: 90%;
     }
     .our-customers-heading p {
-        width: 70%;
+        width: 90%;
         justify-content: center;
         display: flex;
     }
@@ -827,7 +902,7 @@
     .left-footer-center-btn {
         font-size: 1rem;
         border-radius: 5px;
-        right: 16%;
+        right: -1%;
         bottom: 30%;
     }
 
