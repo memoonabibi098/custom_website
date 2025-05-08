@@ -11,8 +11,6 @@ function msbar() {
     msNavbar.style.transition = "right .5s ease ";
     var msNavbar = document.querySelector('.ms-nav-icon');
     msNavbar.style.zIndex = "0";
-
-
 }
 function msCross() {
     var msNavbar = document.querySelector('.ms-navbar');
@@ -26,11 +24,6 @@ function msCross() {
         navIcon.style.zIndex = "99999";
     }, 500); // 500ms to match transition
 }
-
-
-
-
-
 $(document).ready(function () {
     const detailDivs = $(".services-detail-div");
     const visaDivs = $(".business-visa-div");
@@ -91,3 +84,70 @@ $(document).ready(function () {
         });
     });
 });
+
+
+$(document).ready(function() {
+    $('.featured-services-detail-card').on('mouseenter', function() {
+      $(this).css({
+        'transform': 'scale(1.05)',
+        'box-shadow': '0 0 10px rgba(242, 204, 116, 0.63)',
+        'transition': 'transform 0.3s ease, box-shadow 0.3s ease'
+      });
+    });
+  
+    $('.featured-services-detail-card').on('mouseleave', function() {
+      $(this).css({
+        'transform': 'scale(1)',
+        'box-shadow': 'none',
+        'transition': 'transform 0.3s ease, box-shadow 0.3s ease'
+      });
+    });
+  });
+
+
+
+
+
+
+
+
+  $(document).ready(function () {
+    $('.btn-view-more').click(function () {
+      // Show extra cards
+      $('.show-1, .show-2').show();
+
+      // Adjust heights
+      $('.featured-services-div').css('height', '150rem');
+      $('.featured-services-heading-div').css('height', '5%');
+      $('.featured-services-heading-p').css('height', '5%');
+      $('.featured-services-details-div-1').css('height', '22%');
+      $('.featured-services-details-div-2').css('height', '22%');
+
+      // Toggle buttons
+      $('.btn-view-more').css('display', 'none');
+      $('.btn-view-less').css('display', 'flex');
+    });
+
+    $('.btn-view-less').click(function () {
+      // Hide extra cards
+      $('.show-1, .show-2').hide();
+
+      // Reset heights
+      $('.featured-services-div').css('height', '75rem');
+      $('.featured-services-heading-div').css('height', '6%');
+      $('.featured-services-heading-p').css('height', '6%');
+      $('.featured-services-details-div-1').css('height', '38%');
+      $('.featured-services-details-div-2').css('height', '38%');
+
+      // Toggle buttons
+      $('.btn-view-more').css('display', 'flex');
+      $('.btn-view-less').css('display', 'none');
+    });
+  });
+  
+
+
+
+
+
+  

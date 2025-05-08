@@ -394,40 +394,142 @@ html::-webkit-scrollbar {
 .zoom-out {
     animation: zoomOut 0.3s forwards;
 }
+
+
+.featured-services-div{
+    width: 100%;
+    height: 75rem;
+    background-color: #2f345b;
+    background-image: url(../Pictures/featured-services-detail-backgound-img.png);
+    background-size: cover;
+    margin-top: 1rem;
+}
+.featured-services-box{
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+}
 .featured-services-heading-div{
     width: 100%;
-    height: 6rem;
+    height: 6%;
     font-family: zurchn-regular;
     font-size: 2.5rem;
     font-weight: bold;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    color: #2f345b;
+    color: #f2cd74;
 }
 .featured-services-heading-p{
     width: 100%;
-    height: 7rem;
+    height: 6%;
     text-align: center;
     justify-content: center;
     font-family: zurchn-regular;
     font-size: 1.5rem;
-    color: #2f345b;
+    color: white;
     line-height: 2rem;
-
 }
-.featured-services-heading-p p{
-    width: 65%;
-    height: 100%;
+.featured-services-details-div-1{
+    width: 100%;
+    height: 38%;
+    justify-content: space-around;
+}
+.featured-services-detail-card{
+    width: 23%;
+    height: 90%;
+    border-radius: 1rem;
+    backdrop-filter: blur(5rem);
+    border: #c59c3d solid 2px;
+    flex-direction: column;
+}
+.featured-services-detail-card-icon-div{
+    width: 100%;
+    height: 15%;
+    margin-top: 1rem;
+}
+.featured-services-detail-card-icon-div img{
+    height: 80%;
+}
+.featured-services-detail-card-haeding-div{
+    width: 90%;
+    height: 15%;
+    font-family: zurchn-regular;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #f2cd74;
+    line-height: 2rem;
+    margin-top: 0.5rem;
+    align-items: self-start;
+}
+.featured-services-detail-card-detail-div{
+    width: 90%;
+    height: 50%;
+    font-family: zurchn-regular;
+    font-size: 1.2rem;
+    color: white;
+    text-align: justify;
+    line-height: 1.7rem;
+    align-items: self-start;
+    margin-top: 0.5rem;
+}
+.featured-services-detail-card-view-detail-div{
+    width: 90%;
+    height: 10%;
+    font-family: zurchn-regular;
+    font-size: 1.2rem;
+    color: #f2cd74;
+}
+.featured-services-detail-card-view-detail-div img{
+    height: 80%;
+    margin-left: 0.5rem;
+}
+.featured-services-details-div-2{
+    width: 100%;
+    height: 38%;
+    justify-content: space-around;
+}
+.featured-services-view-detail-div{
+    width: 100%;
+    height: 10%;  
 }
 
+.show-1 , .show-2{
+    display: none;
+}
 
+.btn-view-more{
+    width: 15%;
+    height: 50%;
+    font-family: zurchn-regular;
+    font-size: 1.5rem;
+    color: #f2cd74;
+    background: none;
+    display: flex;
+    border-radius: 1rem;
+    border: #c59c3d solid 2px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5rem);
+}
+.featured-services-view-detail-div button img{
+    height: 80%;
+    margin-left: 1rem;
+}
 
-
-
-
-
-
-
-
+.btn-view-less{
+    width: 15%;
+    height: 50%;
+    font-family: zurchn-regular;
+    font-size: 1.5rem;
+    color: #f2cd74;
+    background: none;
+    display: none;
+    border-radius: 1rem;
+    border: #c59c3d solid 2px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5rem);
+}
 
 
 

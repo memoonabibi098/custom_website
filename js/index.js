@@ -101,24 +101,6 @@ document.addEventListener('click', () => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const cards = [
   {
     img: "./Pictures/Business Visa.png",
