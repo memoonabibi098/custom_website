@@ -140,3 +140,57 @@ $(document).ready(function () {
     $(".btn-view-less").css("display", "none");
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+  $('.box-stay-1, .box-stay-2, .box-stay-3').mouseenter(function () {
+    let $this = $(this);
+    let index = $this.hasClass('box-stay-1') ? 1 : ($this.hasClass('box-stay-2') ? 2 : 3);
+
+    // Animate parent container
+    $('.expert-visa-detail-box-div').animate({ height: '35rem' }, 300);
+    $('.expert-visa-detail-box').css('align-items', 'flex-start');
+
+    // Reset all
+    $('.guidance-at-every-step-div').css('background-color', '#f2cd74');
+    $('.show-img-1, .show-img-2, .show-img-3').css('display', 'none');
+    $('.show-text-1, .show-text-2, .show-text-3').css('display', 'none');
+    $('.guidance-at-every-step-div').removeClass('detail-hide-div');
+
+    // Update current hovered box
+    $this.css('background-color', '#c59c3d');
+    $this.find('.show-img-' + index).css('display', 'flex');
+    $this.find('.show-text-' + index).css('display', 'flex');
+
+    // Add .detail-hide-div to others
+    $('.box-stay-1, .box-stay-2, .box-stay-3').not($this).addClass('detail-hide-div');
+  });
+
+  // Reset on mouse leave
+  $('.box-stay-1, .box-stay-2, .box-stay-3').mouseleave(function () {
+    // Reset styles
+    $('.expert-visa-detail-box-div').animate({ height: '5rem' }, 300);
+    $('.expert-visa-detail-box').css('align-items', 'center');
+
+    $('.guidance-at-every-step-div').css('background-color', '#f2cd74');
+    $('.show-img-1, .show-img-2, .show-img-3').css('display', 'none');
+    $('.show-text-1, .show-text-2, .show-text-3').css('display', 'none');
+    $('.guidance-at-every-step-div').removeClass('detail-hide-div');
+  });
+});
+
+
+
+
+
+

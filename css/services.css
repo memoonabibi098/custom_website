@@ -537,15 +537,54 @@ html::-webkit-scrollbar {
   font-size: 2.5rem;
   color: #c59c3d;
 }
+
+
+
 .expert-visa-detail-box-div{
 width: 100%;
-height: 10rem;
+height: 5rem;
 }
 .expert-visa-detail-box{
   width: 80%;
   height: 100%;
-  background-color: red;
+  justify-content: space-around;
 }
+.guidance-at-every-step-div{
+  width: 28%;
+  height: 80%;
+  border-radius: 1rem;
+  background-color: #f2cd74;
+  font-family: zurchn-regular;
+  font-size: 2rem;
+  color: #2f345b;
+  flex-direction: column;
+}
+.guidance-at-every-step-heading{
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+.show-img-1 , .show-img-2 , .show-img-3{
+  width: 20%;
+  display: none;
+}
+.show-text-1 , .show-text-2 , .show-text-3{
+  width: 80%;
+  height: 60%;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 2rem;
+  display: none;
+  align-items: center;
+  color: white;
+}
+.detail-hide-div{
+  height: 12%;
+}
+
+
+
+
 
 
 
