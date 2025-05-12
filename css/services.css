@@ -543,49 +543,69 @@ html::-webkit-scrollbar {
 .expert-visa-detail-box-div{
 width: 100%;
 height: 5rem;
+margin-bottom: 1rem;
+transition: height 0.5s ease;
+
 }
 .expert-visa-detail-box{
   width: 80%;
   height: 100%;
   justify-content: space-around;
 }
-.guidance-at-every-step-div{
+.guidance-at-every-step-main-heading-1 , .guidance-at-every-step-main-heading-2 , .guidance-at-every-step-main-heading-3{
   width: 28%;
   height: 80%;
   border-radius: 1rem;
-  background-color: #f2cd74;
   font-family: zurchn-regular;
   font-size: 2rem;
+  background-color: #f2cd74;
   color: #2f345b;
-  flex-direction: column;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
-.guidance-at-every-step-heading{
+.guidance-at-every-step-main-div-1 , .guidance-at-every-step-main-div-2 , .guidance-at-every-step-main-div-3{
+width: 28%;
+height: 90%;
+border-radius: 1rem;
+background-color: #c59c3d;
+flex-direction: column;
+transition: all 0.5s ease;
+display: none;
+}
+.guidance-at-every-step-heading-div-1 , .guidance-at-every-step-heading-div-2 , .guidance-at-every-step-heading-div-3{  
+  width: 90%;
   height: 20%;
-  display: flex;
-  align-items: center;
-}
-.show-img-1 , .show-img-2 , .show-img-3{
-  width: 20%;
-  display: none;
-}
-.show-text-1 , .show-text-2 , .show-text-3{
-  width: 80%;
-  height: 60%;
-  font-size: 1.2rem;
-  text-align: justify;
-  line-height: 2rem;
-  display: none;
-  align-items: center;
+  font-family: zurchn-regular;
+  font-size: 2rem;
   color: white;
 }
-.detail-hide-div{
-  height: 12%;
+.guidance-at-every-step-img-div-1 , .guidance-at-every-step-img-div-2 , .guidance-at-every-step-img-div-3{  
+  width: 90%;
+  height: 20%;
+   opacity: 0;
+  transition: opacity 0.2s ease;
 }
-
-
-
-
-
+.guidance-at-every-step-img-div-1 img,
+.guidance-at-every-step-img-div-2 img,
+.guidance-at-every-step-img-div-3 img{
+  height: 70%;
+  margin-bottom:5%;
+}
+.guidance-at-every-step-para-div-1 , .guidance-at-every-step-para-div-2 , .guidance-at-every-step-para-div-3{
+  width: 90%;
+  height: 55%;
+  font-family: zurchn-regular;
+  font-size: 1.2rem;
+  color: white;
+  text-align: justify;
+  line-height: 2rem;
+  align-items: self-start;
+   opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.visible {
+  opacity: 1;
+}
 
 
 

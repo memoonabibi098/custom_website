@@ -152,45 +152,47 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function() {
-  $('.box-stay-1, .box-stay-2, .box-stay-3').mouseenter(function () {
-    let $this = $(this);
-    let index = $this.hasClass('box-stay-1') ? 1 : ($this.hasClass('box-stay-2') ? 2 : 3);
+$(document).ready(function () {
+  function resetView() {
+  $('.expert-visa-detail-box-div').animate({ height: '5rem' }, 500);
+  $('.expert-visa-detail-box').css('align-items', 'center');
 
-    // Animate parent container
-    $('.expert-visa-detail-box-div').animate({ height: '35rem' }, 300);
-    $('.expert-visa-detail-box').css('align-items', 'flex-start');
+  $('.guidance-at-every-step-main-heading-1, .guidance-at-every-step-main-heading-2, .guidance-at-every-step-main-heading-3')
+    .css('display', 'flex')
+    .animate({ height: '80%' }, 500);
 
-    // Reset all
-    $('.guidance-at-every-step-div').css('background-color', '#f2cd74');
-    $('.show-img-1, .show-img-2, .show-img-3').css('display', 'none');
-    $('.show-text-1, .show-text-2, .show-text-3').css('display', 'none');
-    $('.guidance-at-every-step-div').removeClass('detail-hide-div');
+  $('.guidance-at-every-step-main-div-1, .guidance-at-every-step-main-div-2, .guidance-at-every-step-main-div-3')
+    .fadeOut(300);
 
-    // Update current hovered box
-    $this.css('background-color', '#c59c3d');
-    $this.find('.show-img-' + index).css('display', 'flex');
-    $this.find('.show-text-' + index).css('display', 'flex');
+  $('.guidance-at-every-step-img-div-1, .guidance-at-every-step-img-div-2, .guidance-at-every-step-img-div-3, .guidance-at-every-step-para-div-1, .guidance-at-every-step-para-div-2, .guidance-at-every-step-para-div-3')
+    .removeClass('visible');
+}
 
-    // Add .detail-hide-div to others
-    $('.box-stay-1, .box-stay-2, .box-stay-3').not($this).addClass('detail-hide-div');
+function showContent(index) {
+  $('.expert-visa-detail-box-div').stop().animate({ height: '35rem' }, 500);
+  $('.expert-visa-detail-box').css('align-items', 'flex-start');
+
+  $(`.guidance-at-every-step-main-heading-${index}`).hide();
+  [1, 2, 3].filter(i => i !== index).forEach(i => {
+    $(`.guidance-at-every-step-main-heading-${i}`).animate({ height: '12%' }, 500);
   });
 
-  // Reset on mouse leave
-  $('.box-stay-1, .box-stay-2, .box-stay-3').mouseleave(function () {
-    // Reset styles
-    $('.expert-visa-detail-box-div').animate({ height: '5rem' }, 300);
-    $('.expert-visa-detail-box').css('align-items', 'center');
-
-    $('.guidance-at-every-step-div').css('background-color', '#f2cd74');
-    $('.show-img-1, .show-img-2, .show-img-3').css('display', 'none');
-    $('.show-text-1, .show-text-2, .show-text-3').css('display', 'none');
-    $('.guidance-at-every-step-div').removeClass('detail-hide-div');
+  const mainDiv = $(`.guidance-at-every-step-main-div-${index}`);
+  mainDiv.css('display', 'flex').hide().fadeIn(500, function () {
+    setTimeout(() => {
+      $(`.guidance-at-every-step-img-div-${index}, .guidance-at-every-step-para-div-${index}`).addClass('visible');
+    }, 600); // show after 0.6s
   });
+}
+
+$(document).ready(function () {
+  $('.guidance-at-every-step-main-heading-1').mouseenter(() => showContent(1));
+  $('.guidance-at-every-step-main-heading-2').mouseenter(() => showContent(2));
+  $('.guidance-at-every-step-main-heading-3').mouseenter(() => showContent(3));
+
+  $('.guidance-at-every-step-main-div-1, .guidance-at-every-step-main-div-2, .guidance-at-every-step-main-div-3')
+    .mouseleave(() => resetView());
 });
-
-
-
-
+});
 
 
