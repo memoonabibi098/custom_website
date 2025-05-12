@@ -2,18 +2,18 @@
 
     /*laptop and small lcd [1001px -> 1200px]*/
     .hero-bg-img {
-        height: 40rem;
+        height: 30rem;
         background-image: url(../Pictures/picture-1-1280.png);
         background-size: cover;
     }
 
     .main-div {
-        height: 40rem;
+        height: 30rem;
         background-color: hsl(233deg 32% 27% / 50%);
     }
 
     .main-navbar {
-        height: 12%;
+        height: 16%;
     }
 
     .navbar {
@@ -29,83 +29,45 @@
     .header-left-box {
         width: 90%;
     }
-
-    .search-box {
-        width: 90%;
+    .services-heading-box {
+    width: 90%;
     }
-    .choose-us-benefit {
-        height: 65%;
+    .business-visa-view-detail-div{
+        width: 35%;
     }
-
-    .choose-us-benefit-ul {
-        width: 90%;
-        height: 70%;
+    .services-detail-div{
+        width: 85%;
     }
-    .choose-us-title{
-        font-size: 1.2rem;
-    }
-
-    .choose-us-counter-div {
+    .featured-services-box{
         width: 95%;
+    }
+    .featured-services-details-div-1 {
         justify-content: space-between;
     }
-    .choose-us-description {
-        height: 40%;
-        line-height: 1.5rem;
+    .featured-services-detail-card {
+        width: 24%;
     }
-
-    .sponsor-1 {
-        width: 90%;
+    .featured-services-detail-card-haeding-div {
+    font-size: 1rem;
+    line-height: 1.5rem;
     }
-    .sponsor-1-1-img-icon {
-        height: 70%;
+    .btn-view-more {
+        width: 20%;
     }
-
-    .services-div {
-        width: 100%;
-        height: 95%;
+    .expert-visa-detail-box {
+    width: 95%;
     }
-
-    .services-dots-div {
-        height: 2rem;
-    }
-
-    .blog-div {
-        width: 100%;
-    }
-
-    .blog-detail-div-box {
-        width: 90%;
-    }
-    .by-author-div{
-        font-size: 1.2rem;
-    }
-    .comments-div {
-        width: 19%;
-        font-size: 1.2rem;
-    }
-
-    .blog-button-view-div {
-        width: 30%;
-    }
-
-    .blog-button-time-div {
-        width: 70%;
-    }
-
-    .div-our-customers {
-        width: 90%;
-    }
-
-    .our-customers-bottom {
-        width: 95%;
+    .show-hide-div {
+    width: 32%;
     }
     .footer-box {
         width: 95%;
     }
-
+    .left-footer-center{
+        width: 100%;
+    }
     .left-footer-center-btn {
-        right: 20%;
+        right: 32%;
     }
     .footer-center-heading-div {
         width: 65%;

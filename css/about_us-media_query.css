@@ -2,18 +2,18 @@
 
     /*laptop and small lcd [1001px -> 1200px]*/
     .hero-bg-img {
-        height: 40rem;
+        height: 30rem;
         background-image: url(../Pictures/about\ us\ cover\ pic.png);
         background-size: cover;
     }
 
     .main-div {
-        height: 40rem;
+        height: 30rem;
         background-color: hsl(233deg 32% 27% / 50%);
     }
 
     .main-navbar {
-        height: 12%;
+        height: 16%;
     }
 
     .navbar {
@@ -42,11 +42,14 @@
         width: 80%;
         left: 10%;
     }
+    .ceo-message-text-name{
+        width: 85%;
+    }
     .ceo-message-top-imfo-div {
         justify-content: flex-end;
     }
     .ceo-massage-top-info-box{
-        width: 40%;
+        width: 35%;
         height: 100%;
         align-items: end;
         justify-content: flex-end;
@@ -92,12 +95,15 @@
     .our-customers-bottom {
         width: 95%;
     }
+    .left-footer-center{
+        width: 100%;
+    }
     .footer-box {
         width: 95%;
     }
 
     .left-footer-center-btn {
-        right: 20%;
+        right: 32%;
     }
     .footer-center-heading-div {
         width: 65%;
@@ -341,14 +347,13 @@
     }
     .left-footer-center-btn {
         font-size: 1rem;
+        right: 11%;
+        bottom: 47%;
     }
     .footer-center-heading-div {
         width: 70%;
     }
-    .left-footer-center-btn {
-        right: 6%;
-        bottom: 47%;
-    }
+
     .footer-center-div {
         width: 40%;
     }
@@ -604,7 +609,7 @@
     }
     .ceo-message-text-name span {
         font-size: 1rem;
-        width: 70%;
+        width: 62%;
     }
     .ceo-message-right-div {
         width: 90%;
@@ -726,13 +731,13 @@
         font-size: 2rem;
     }
     .our-team-info-1-div {
-        width: 100%;
-        height: 75%;
+        width: 70%;
+        height: 55%;
         justify-content: center;
     }
     .team-info-1 {
-        width: 85%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
     }
     .team-info-img-2,
     .team-info-img-3,
