@@ -552,8 +552,19 @@ transition: height 0.5s ease;
   height: 100%;
   justify-content: space-around;
 }
-.guidance-at-every-step-main-heading-1 , .guidance-at-every-step-main-heading-2 , .guidance-at-every-step-main-heading-3{
+.show-hide-div{
   width: 28%;
+
+  height: 100%;
+  flex-direction: column;
+}
+
+
+
+
+
+.guidance-at-every-step-main-heading-1 , .guidance-at-every-step-main-heading-2 , .guidance-at-every-step-main-heading-3{
+  width: 100%;
   height: 80%;
   border-radius: 1rem;
   font-family: zurchn-regular;
@@ -564,7 +575,7 @@ transition: height 0.5s ease;
   cursor: pointer;
 }
 .guidance-at-every-step-main-div-1 , .guidance-at-every-step-main-div-2 , .guidance-at-every-step-main-div-3{
-width: 28%;
+width: 100%;
 height: 90%;
 border-radius: 1rem;
 background-color: #c59c3d;
