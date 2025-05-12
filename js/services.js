@@ -149,50 +149,62 @@ $(document).ready(function () {
 
 
 
+let resetTimer;
 
+function resetView() {
+  // Step 1: Shrink container
+  $('.expert-visa-detail-box-div').stop().animate({ height: '5rem' }, 500);
 
-
-$(document).ready(function () {
-  function resetView() {
-  $('.expert-visa-detail-box-div').animate({ height: '5rem' }, 500);
+  // Step 2: Center align-items
   $('.expert-visa-detail-box').css('align-items', 'center');
 
-  $('.guidance-at-every-step-main-heading-1, .guidance-at-every-step-main-heading-2, .guidance-at-every-step-main-heading-3')
-    .css('display', 'flex')
-    .animate({ height: '80%' }, 500);
+  // Step 3: Hide content and fade out children smoothly
+  $('.guidance-at-every-step-main-div-1, .guidance-at-every-step-main-div-2, .guidance-at-every-step-main-div-3').fadeOut(500);
 
-  $('.guidance-at-every-step-main-div-1, .guidance-at-every-step-main-div-2, .guidance-at-every-step-main-div-3')
-    .fadeOut(300);
-
+  // Step 4: Remove visibility class (fades out inner elements)
   $('.guidance-at-every-step-img-div-1, .guidance-at-every-step-img-div-2, .guidance-at-every-step-img-div-3, .guidance-at-every-step-para-div-1, .guidance-at-every-step-para-div-2, .guidance-at-every-step-para-div-3')
     .removeClass('visible');
+
+  // Step 5: Restore all main headings
+  $('.guidance-at-every-step-main-heading-1, .guidance-at-every-step-main-heading-2, .guidance-at-every-step-main-heading-3')
+    .css('display', 'flex')
+    .stop()
+    .animate({ height: '80%' }, 500);
 }
 
 function showContent(index) {
+  clearTimeout(resetTimer);
+
+  // Step 1: Expand container
   $('.expert-visa-detail-box-div').stop().animate({ height: '35rem' }, 500);
+
+  // Step 2: Align content to top
   $('.expert-visa-detail-box').css('align-items', 'flex-start');
 
+  // Step 3: Hide the selected heading and shrink others
   $(`.guidance-at-every-step-main-heading-${index}`).hide();
   [1, 2, 3].filter(i => i !== index).forEach(i => {
-    $(`.guidance-at-every-step-main-heading-${i}`).animate({ height: '12%' }, 500);
+    $(`.guidance-at-every-step-main-heading-${i}`).stop().animate({ height: '20%' }, 500);
   });
 
+  // Step 4: Show main content div
   const mainDiv = $(`.guidance-at-every-step-main-div-${index}`);
   mainDiv.css('display', 'flex').hide().fadeIn(500, function () {
     setTimeout(() => {
+      // Step 5: Fade in img and para
       $(`.guidance-at-every-step-img-div-${index}, .guidance-at-every-step-para-div-${index}`).addClass('visible');
-    }, 600); // show after 0.6s
+    }, 600);
   });
 }
 
 $(document).ready(function () {
-  $('.guidance-at-every-step-main-heading-1').mouseenter(() => showContent(1));
-  $('.guidance-at-every-step-main-heading-2').mouseenter(() => showContent(2));
-  $('.guidance-at-every-step-main-heading-3').mouseenter(() => showContent(3));
+  // Bind hover events
+  [1, 2, 3].forEach(index => {
+    $(`.guidance-at-every-step-main-heading-${index}`).mouseenter(() => showContent(index));
 
-  $('.guidance-at-every-step-main-div-1, .guidance-at-every-step-main-div-2, .guidance-at-every-step-main-div-3')
-    .mouseleave(() => resetView());
+    $(`.guidance-at-every-step-main-div-${index}`).hover(
+      () => clearTimeout(resetTimer),
+      () => resetTimer = setTimeout(resetView, 300)
+    );
+  });
 });
-});
-
-

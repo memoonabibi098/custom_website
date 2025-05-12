@@ -226,6 +226,8 @@ html::-webkit-scrollbar {
   width: 100%;
   height: 5rem;
   font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
   color: #c59c3d;
 }
 
@@ -406,7 +408,7 @@ html::-webkit-scrollbar {
 }
 .featured-services-heading-div {
   width: 100%;
-  height: 6%;
+  height: 10%;
   font-family: zurchn-regular;
   font-size: 2.5rem;
   font-weight: bold;
@@ -414,16 +416,7 @@ html::-webkit-scrollbar {
   text-transform: uppercase;
   color: #f2cd74;
 }
-.featured-services-heading-p {
-  width: 100%;
-  height: 6%;
-  text-align: center;
-  justify-content: center;
-  font-family: zurchn-regular;
-  font-size: 1.5rem;
-  color: white;
-  line-height: 2rem;
-}
+
 .featured-services-details-div-1 {
   width: 100%;
   height: 38%;
@@ -554,7 +547,6 @@ transition: height 0.5s ease;
 }
 .show-hide-div{
   width: 28%;
-
   height: 100%;
   flex-direction: column;
 }
@@ -594,7 +586,6 @@ display: none;
   width: 90%;
   height: 20%;
    opacity: 0;
-  transition: opacity 0.2s ease;
 }
 .guidance-at-every-step-img-div-1 img,
 .guidance-at-every-step-img-div-2 img,
@@ -612,7 +603,6 @@ display: none;
   line-height: 2rem;
   align-items: self-start;
    opacity: 0;
-  transition: opacity 0.2s ease;
 }
 .visible {
   opacity: 1;
