@@ -63,11 +63,16 @@
     .footer-box {
         width: 95%;
     }
+    .left-footer-center input{
+        width: 65%;
+    }
     .left-footer-center{
         width: 100%;
     }
-    .left-footer-center-btn {
-        right: 32%;
+     .left-footer-center-btn {
+        font-size: 1rem;
+        right: 33%;
+        bottom: 45%;
     }
     .footer-center-heading-div {
         width: 65%;
@@ -342,16 +347,16 @@
     }
     .left-footer-center input {
         font-size: 1.1rem;
+        width: 87%;
     }
     .left-footer-center-btn {
         font-size: 1rem;
+         right: 11%;
+        bottom: 47%;
+
     }
     .footer-center-heading-div {
         width: 70%;
-    }
-    .left-footer-center-btn {
-        right: 6%;
-        bottom: 47%;
     }
     .footer-center-div {
         width: 40%;
@@ -861,10 +866,19 @@
     .left-footer-center input {
         border-bottom: 2px solid #2f345b;
     }
+
+    .left-footer-center input {
+        width: 87%;
+    }
+
+
+
+
+
     .left-footer-center-btn {
         font-size: 1rem;
         border-radius: 5px;
-        right: -1%;
+        right: 11%;
         bottom: 30%;
     }
 

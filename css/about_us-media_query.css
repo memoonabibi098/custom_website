@@ -344,11 +344,16 @@
     }
     .left-footer-center input {
         font-size: 1.1rem;
+        width: 65;
     }
+    .left-footer-center {
+    width: 100%;
+    }
+
     .left-footer-center-btn {
         font-size: 1rem;
-        right: 11%;
-        bottom: 47%;
+        right: 33%;
+        bottom: 45%;
     }
     .footer-center-heading-div {
         width: 70%;
@@ -829,10 +834,16 @@
     .left-footer-center input {
         border-bottom: 2px solid #2f345b;
     }
+    .left-footer-center input {
+        width: 87%;
+    }
+
+
+
     .left-footer-center-btn {
         font-size: 1rem;
         border-radius: 5px;
-        right: 16%;
+        right: 11%;
         bottom: 30%;
     }
 
