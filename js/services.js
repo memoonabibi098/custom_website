@@ -146,104 +146,68 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $(".btn-view-more").click(function () {
-    // Show extra cards
-    $(".show-1, .show-2").show();
+  $(document).ready(function () {
+    $(".btn-view-more").click(function () {
+      // Show extra cards
+      $(".show-1, .show-2").show();
 
-    // Adjust heights
-    $(".featured-services-div").css("height", "150rem");
-    $(".featured-services-heading-div").css("height", "5%");
-    $(".featured-services-heading-p").css("height", "5%");
-    $(".featured-services-details-div-1").css("height", "22%");
-    $(".featured-services-details-div-2").css("height", "22%");
+      // Adjust heights
+      $(".featured-services-div").css("height", "150rem");
+      $(".featured-services-heading-div").css("height", "5%");
+      $(".featured-services-heading-p").css("height", "5%");
+      $(".featured-services-details-div-1").css("height", "22%");
+      $(".featured-services-details-div-2").css("height", "22%");
 
-    // Toggle buttons
-    $(".btn-view-more").css("display", "none");
-    $(".btn-view-less").css("display", "flex");
+      // Toggle buttons
+      $(".btn-view-more").css("display", "none");
+      $(".btn-view-less").css("display", "flex");
+    });
+
+    $(".btn-view-less").click(function () {
+      // Hide extra cards
+      $(".show-1, .show-2").hide();
+
+      // Reset heights
+      $(".featured-services-div").css("height", "75rem");
+      $(".featured-services-heading-div").css("height", "6%");
+      $(".featured-services-heading-p").css("height", "6%");
+      $(".featured-services-details-div-1").css("height", "38%");
+      $(".featured-services-details-div-2").css("height", "38%");
+
+      // Toggle buttons
+      $(".btn-view-more").css("display", "flex");
+      $(".btn-view-less").css("display", "none");
+    });
   });
 
-  $(".btn-view-less").click(function () {
-    // Hide extra cards
-    $(".show-1, .show-2").hide();
-
-    // Reset heights
-    $(".featured-services-div").css("height", "75rem");
-    $(".featured-services-heading-div").css("height", "6%");
-    $(".featured-services-heading-p").css("height", "6%");
-    $(".featured-services-details-div-1").css("height", "38%");
-    $(".featured-services-details-div-2").css("height", "38%");
-
-    // Toggle buttons
-    $(".btn-view-more").css("display", "flex");
-    $(".btn-view-less").css("display", "none");
-  });
-});
 
 
+  $(document).ready(function(){
+      $('.guidance-at-every-step-card-1').mouseenter(function(){
+        $(this).find('.guidance-at-every-step-card-1-icon img').stop(true, true).slideDown();
+        $(this).find('.guidance-at-every-step-card-1-detail').stop(true, true).slideDown();
+        $(this).css('background-color', '#c59c3d');
+        $(this).find('.guidance-at-every-step-card-1-heading').css('color', 'white');
+      });
 
+      $('.guidance-at-every-step-card-1').mouseleave(function(){
+        $(this).find('.guidance-at-every-step-card-1-icon img').stop(true, true).slideUp();
+        $(this).find('.guidance-at-every-step-card-1-detail').stop(true, true).slideUp();
+        $(this).css('background-color', '#f2cd74');
+        $(this).find('.guidance-at-every-step-card-1-heading').css('color', '#2f345b');
+      });
+    });
 
 
 
 
 
 
-let resetTimer;
 
-function resetView() {
-  // Step 1: Shrink container
-  $('.expert-visa-detail-box-div').stop().animate({ height: '5rem' }, 500);
 
-  // Step 2: Center align-items
-  $('.expert-visa-detail-box').css('align-items', 'center');
 
-  // Step 3: Hide content and fade out children smoothly
-  $('.guidance-at-every-step-main-div-1, .guidance-at-every-step-main-div-2, .guidance-at-every-step-main-div-3').fadeOut(500);
 
-  // Step 4: Remove visibility class (fades out inner elements)
-  $('.guidance-at-every-step-img-div-1, .guidance-at-every-step-img-div-2, .guidance-at-every-step-img-div-3, .guidance-at-every-step-para-div-1, .guidance-at-every-step-para-div-2, .guidance-at-every-step-para-div-3')
-    .removeClass('visible');
 
-  // Step 5: Restore all main headings
-  $('.guidance-at-every-step-main-heading-1, .guidance-at-every-step-main-heading-2, .guidance-at-every-step-main-heading-3')
-    .css('display', 'flex')
-    .stop()
-    .animate({ height: '80%' }, 500);
-}
 
-function showContent(index) {
-  clearTimeout(resetTimer);
 
-  // Step 1: Expand container
-  $('.expert-visa-detail-box-div').stop().animate({ height: '35rem' }, 500);
 
-  // Step 2: Align content to top
-  $('.expert-visa-detail-box').css('align-items', 'flex-start');
-
-  // Step 3: Hide the selected heading and shrink others
-  $(`.guidance-at-every-step-main-heading-${index}`).hide();
-  [1, 2, 3].filter(i => i !== index).forEach(i => {
-    $(`.guidance-at-every-step-main-heading-${i}`).stop().animate({ height: '20%' }, 500);
-  });
-
-  // Step 4: Show main content div
-  const mainDiv = $(`.guidance-at-every-step-main-div-${index}`);
-  mainDiv.css('display', 'flex').hide().fadeIn(500, function () {
-    setTimeout(() => {
-      // Step 5: Fade in img and para
-      $(`.guidance-at-every-step-img-div-${index}, .guidance-at-every-step-para-div-${index}`).addClass('visible');
-    }, 600);
-  });
-}
-
-$(document).ready(function () {
-  // Bind hover events
-  [1, 2, 3].forEach(index => {
-    $(`.guidance-at-every-step-main-heading-${index}`).mouseenter(() => showContent(index));
-
-    $(`.guidance-at-every-step-main-div-${index}`).hover(
-      () => clearTimeout(resetTimer),
-      () => resetTimer = setTimeout(resetView, 300)
-    );
-  });
-});
