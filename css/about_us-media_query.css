@@ -3,7 +3,7 @@
     /*laptop and small lcd [1001px -> 1200px]*/
     .hero-bg-img {
         height: 30rem;
-        background-image: url(../Pictures/about\ us\ cover\ pic.png);
+        background-image: url(../Pictures/about-us.png);
         background-size: cover;
     }
 
@@ -125,7 +125,7 @@
 
     .hero-bg-img {
         height: 25rem;
-        background-image: url(../Pictures/about\ us\ cover\ pic-1.png);
+        background-image: url(../Pictures/about-us-1.png);
         background-size: cover;
     }
 
@@ -401,7 +401,7 @@
 
     .hero-bg-img {
         height: 20rem;
-        background-image: url(../Pictures/about\ us\ cover\ pic-1.png);
+        background-image: url(../Pictures/about-us-2.png);
         background-size: cover;
         position: absolute;
         top: 0px;

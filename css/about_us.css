@@ -124,7 +124,7 @@ html::-webkit-scrollbar {
 .hero-bg-img {
   width: 100%;
   height: 40rem;
-  background-image: url(../Pictures/about\ us\ cover\ pic.png);
+  background-image: url(../Pictures/about-us.png);
   background-size: cover;
 }
 
@@ -211,7 +211,6 @@ html::-webkit-scrollbar {
   font-family: zurchn-regular;
   font-size: 5rem;
   color: white;
-  font-weight: bold;
   letter-spacing: 0.4rem;
 }
 

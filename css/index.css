@@ -124,7 +124,7 @@ html::-webkit-scrollbar {
 .hero-bg-img {
     width: 100%;
     height: 54rem;
-    background-image: url(../Pictures/picture-1.jpg);
+    background-image: url(../Pictures/home.png);
 }
 
 .main-div {
@@ -208,7 +208,7 @@ html::-webkit-scrollbar {
 
 .main-div-p {
     font-family: zurchn-regular;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: white;
     text-transform: capitalize;
 }
