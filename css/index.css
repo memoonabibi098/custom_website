@@ -1250,6 +1250,7 @@ html::-webkit-scrollbar {
 }
 
 .left-footer-center input {
+    width: 65%;
     background-color: transparent;
     border: none;
     border-bottom: 3px solid #2f345b;
@@ -1279,8 +1280,8 @@ input:focus {
     padding: 5px 10px;
     border-radius: 10px;
     position: absolute;
-    right: 37%;
-    bottom: 45%;
+    right: 34%;
+    bottom: 46%;
 }
 
 .left-footer-center-bottom {

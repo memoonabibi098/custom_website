@@ -103,17 +103,17 @@
     .footer-box {
         width: 95%;
     }
-
-    .footer-e-mail-div {
-    width: 68%;
+    .left-footer-center input{
+        width: 65%;
     }
-
-
     .left-footer-center {
     width: 100%;
 }
+
+
+
     .left-footer-center-btn {
-        right: 0%;
+        right: 33%;
     }
     .footer-center-heading-div {
         width: 65%;
@@ -392,17 +392,9 @@
     .left-footer-center input {
         font-size: 1.1rem;
     }
-    .footer-e-mail-div {
-    width: 90%;
-    }
-
-
-
-
-
     .left-footer-center-btn {
         font-size: 1rem;
-        right: 0%;
+        right: 11%;
         bottom: 47%;
     }
     .footer-center-heading-div {
