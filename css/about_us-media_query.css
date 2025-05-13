@@ -101,9 +101,12 @@
     .footer-box {
         width: 95%;
     }
+    .left-footer-center input{
+        width: 65%;
+    }
 
     .left-footer-center-btn {
-        right: 32%;
+        right: 33%;
     }
     .footer-center-heading-div {
         width: 65%;
