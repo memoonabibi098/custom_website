@@ -131,214 +131,70 @@
         height: 2.2rem;
         width: 7rem;
     }
-
-    .search-box {
-        width: 95%;
-    }
-
-    .lable {
-        font-size: 1rem;
-    }
-
-    .custom-select-box {
-        font-size: 1rem;
-    }
-
-    .label-select-div {
-        width: 28%;
-    }
-
-    .btn-div {
-        width: 16%;
-    }
-    .choose-us-div{
-        height: 25rem;
-    }
-
-    .choose-us-heading-div {
-        height: 30%;
-        font-size: 2rem;
-    }
-    .choose-us-heading{
-        height: 20%;
-    }
-    .choose-us-benefit-ul {
-        width: 95%;
-        height: 100%;
-    }
-
-    .choose-us-benefit-ul-li {
-        width: 23%;
-        height: 90%;
-    }
-
-    .choose-us-p-div {
-        font-size: 1rem;
-    }
-
-    .choose-us-counter-div {
-        width: 95%;
-        justify-content: space-between;
-    }
-
-    .choose-us-title {
-        font-size: 1rem;
-        height: 18%;
-    }
-
-    .choose-us-description {
-        width: 90%;
-        font-size: 0.8rem;
-        line-height: 1rem;
-        align-items: self-start;
-    }
-
-    .choose-us-counter-div-1-2 {
-        font-size: 0.8rem;
-    }
-
-    .choose-us-counter-div-1-1 {
-        font-size: 2.5rem;
-    }
-
-    .choose-us-counter-div-1 {
-        width: 25%;
-    }
-
-    .affiliations {
-        font-size: 2rem;
-    }
-
-    .sponsor {
-        height: 8rem;
-    }
-
-    .sponsor-1 {
-        width: 95%;
-        height: 75%;
-    }
-
-    .sponsor-1-1-img-icon {
-        height: 50%;
-    }
-
-    .sponsor-1-1-text {
-        font-size: 0.8rem;
-        line-height: 1.5rem;
-    }
-
-    .services-div {
-        width: 100%;
-        height: 90%;
-    }
-
-    .services-main-div {
-        height: 30rem;
-    }
-
-    .services-text-box-div {
-        height: 75%;
-    }
-
-    .services-text-div {
-        height: 90%;
-    }
-
-    .services-heading {
+        .services-tag-line {
+        height: 4rem;
         font-size: 1.5rem;
     }
-
-    .services-detail {
-        font-size: 1.2rem;
-        line-height: 1.7rem;
+        .expert-visa-assistance {
+        height: 4rem;
+        font-size: 2rem;
     }
-
-    .services-dots {
-        width: 18%;
+        .services-heading-box {
+        width: 95%;
     }
-
-    .services-dots-div {
-        height: 2rem;
+        .services-heading-left {
+        width: 50%;
     }
-
-    .ex-blog-line {
-        height: 5rem;
+        .business-visa-icon-div {
+        width: 15%;
     }
-
-    .blog-main-div {
-        height: 25rem;
+        .business-visa-icon-div img {
+        height: 45%;
     }
-
-    .blog-div {
-        width: 100%;
+        .business-visa-name-div {
+        font-size: 1.5rem;
+        width: 55%;
     }
-
-    .blog-detail-div-box {
-        width: 90%;
-    }
-
-    .by-author-div {
+        .business-visa-view-detail-div {
         width: 30%;
+        font-size: 1rem;
+        justify-content: flex-end;
+        margin-right: 0.5rem;
     }
-
-    .comments-div {
-        width: 35%;
+        .business-visa-view-detail-div p {
+        width: 75%;
+        margin-right: 0.5rem;
     }
-
-    .blog-detail-heading-div {
-        font-size: 1.5rem;
+        .services-heading-right {
+        width: 50%;
     }
-
-    .blog-detail-text {
-        font-size: 0.8rem;
+        .services-detail-div {
+        width: 85%;
+        
+    }
+        .services-detail-heading {
+        width: 100%;
+        height: 20%;
+        font-family: zurchn-regular;
+        font-size: 2rem;
+    }
+        .services-detail-para {
+        font-size: 1rem;
         line-height: 1.5rem;
     }
-
-    .blog-bottom-div {
-        height: 15%;
-    }
-
-    .blog-buttom-view {
-        width: 53%;
-    }
-
-    .blog-button-view-div {
-        width: 60%;
-    }
-
-    .blog-buttom-time {
-        width: 40%;
-    }
-
-    .blog-button-time-div {
-        width: 80%;
-    }
-
-    .full-line {
-        height: 6%;
-    }
-
-    .div-our-customers {
-        width: 90%;
-    }
-    .our-customers-heading p{
-        width: 70%;
-        box-sizing: border-box;
-        padding-left: 2.5rem;
-    }
-    .our-customers-bottom {
+    .featured-services-box{
         width: 95%;
     }
+    
 
-    .star-cls{
-        font-size: 1.2rem;
-        justify-content: center;
-        align-items: center;
-    }
-    .our-customers-right {
-        font-size: 1.5rem;
-        line-height: 35px;
-    }
+
+
+
+
+
+
+
+
     .footer-box {
         width: 95%;
     }
@@ -441,11 +297,22 @@
         flex-direction: column;
         align-items: flex-end;
         position: fixed;
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
     .sm-nav-main-div {
         display: flex;
-        z-index: 99999;
     }
 
     .ms-navbar {

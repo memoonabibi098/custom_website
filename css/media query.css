@@ -483,12 +483,9 @@
         flex-direction: column;
         align-items: flex-end;
         position: fixed;
+        display: flex;
     }
 
-    .sm-nav-main-div {
-        display: flex;
-        z-index: 99999;
-    }
 
     .ms-navbar {
         width: 50%;
@@ -643,6 +640,8 @@
     .choose-us-div {
         width: 100%;
         height: 90rem;
+        z-index: 0;
+        position: relative;
     }
     .choose-us-heading-div {
         font-size: 1.5rem;
@@ -689,10 +688,14 @@
     .affiliations {
         height: 3rem;
         font-size: 1.3rem;
+        z-index: 0;
+        position: relative;
     }
     .sponsor {
         width: 100%;
         height: 20rem;
+        z-index: 0;
+        position: relative;
     }
     .sponsor-1 {
         width: 90%;
@@ -713,6 +716,8 @@
     }
     .services-main-div {
         height: 30rem;
+        z-index: 0;
+        position: relative;
     }
     .services-div {
         width: 100%;
@@ -742,9 +747,13 @@
     }
     .ex-blog-line { 
         height: 3rem;
+        z-index: 0;
+        position: relative;
     }
     .blog-main-div {
         height: 60rem;
+        z-index: 0;
+        position: relative;
     }
     .blog-heading-div {
         height: 10%;
@@ -761,6 +770,7 @@
     .blog-detail-div-box {
         width: 90%;
         border-radius: 1rem;
+        box-shadow: none;
     }
     .blog-top-div {
         height: 85%;
@@ -827,9 +837,13 @@
     }
     .blog-review-line {
         height: 3rem;
+        z-index: 0;
+        position: relative;
     }
     .main-div-our-customers {
         height: 25rem;
+        z-index: 0;
+        position: relative;
     }
     .div-our-customers {
         width: 90%;
@@ -874,6 +888,8 @@
     }
     .our-customers-bottom-div {
         height: 3rem;
+        z-index: 0;
+        position: relative;
     }
     .our-customers-bottom {
         font-size: 1rem;
@@ -881,6 +897,8 @@
     .main-footer-div {
         width: 100%;
         height: 10rem;
+        z-index: 0;
+        position: relative;
     }
     .footer-box {
         width: 95%;

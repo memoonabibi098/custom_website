@@ -296,6 +296,8 @@
     }
     .our-team-main-div {
         height: 25rem;
+        position: relative;
+        z-index: 0;
     }
     .our-team-div {
         width: 90%;
@@ -445,11 +447,8 @@
         flex-direction: column;
         align-items: flex-end;
         position: fixed;
-    }
-
-    .sm-nav-main-div {
         display: flex;
-        z-index: 99999;
+
     }
 
     .ms-navbar {
@@ -628,8 +627,10 @@
         line-height: 1rem;
         color: #2f345b;
     }
-    
-    
+        .our-Approach-div{
+        position: relative;
+        z-index: 0;
+    }
     .our-approach-box {
         width: 90%;
         height: 100%;
@@ -657,6 +658,8 @@
     .choose-us-div {
         width: 100%;
         height: 90rem;
+        position: relative;
+        z-index: 0;
     }
     .choose-us-heading-div {
         font-size: 1.5rem;
@@ -703,10 +706,14 @@
     .affiliations {
         height: 3rem;
         font-size: 1.3rem;
+        position: relative;
+        z-index: 0;
     }
     .sponsor {
         width: 100%;
         height: 20rem;
+        position: relative;
+        z-index: 0;
     }
     .sponsor-1 {
         width: 90%;
@@ -725,6 +732,11 @@
         width: 70%;
         line-height: 1.5rem;
     }
+    .blog-review-line{
+        position: relative;
+        z-index: 0;
+    }
+
     .our-team-div {
         width: 90%;
     }
@@ -755,6 +767,8 @@
 
     .main-div-our-customers {
         height: 25rem;
+        position: relative;
+        z-index: 0;
     }
     .div-our-customers {
         width: 90%;
@@ -799,6 +813,8 @@
     }
     .our-customers-bottom-div {
         height: 3rem;
+        position: relative;
+        z-index: 0;
     }
     .our-customers-bottom {
         font-size: 1rem;
@@ -806,6 +822,8 @@
     .main-footer-div {
         width: 100%;
         height: 10rem;
+        position: relative;
+        z-index: 0;
     }
     .footer-box {
         width: 95%;
