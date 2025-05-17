@@ -25,43 +25,29 @@ function msCross() {
   }, 500); // 500ms to match transition
 }
 
- $(document).ready(function () {
-    // When nav icon is clicked
-    $(".ms-nav-icon").on("click", function () {
-      $(".sm-nav-main-div").css("z-index", "99999");
-      $(".sm-nav-main-div").css("backdropFilter", "blur(3px)");
-      $(".sm-nav-main-div").css("background-color", " #2f345b54");      
-      msbar(); // Call the existing function
-    });
-
-    // Override the msCross function with jQuery addition
-    window.msCross = function () {
-      $(".ms-navbar").css("right", "-60%");
-      $(".ms-nav-icon").css("transition", "right .5s ease");
-
-      // Delay resetting z-index of parent after closing
-      setTimeout(function () {
-        $(".sm-nav-main-div").css("z-index", "0");
-        $(".ms-nav-icon").css("z-index", "99999");
-       $(".sm-nav-main-div").css("backdropFilter", "");
-      $(".sm-nav-main-div").css("background-color", ""); 
-      }, 500); // Match the transition time
-    };
+$(document).ready(function () {
+  // When nav icon is clicked
+  $(".ms-nav-icon").on("click", function () {
+    $(".sm-nav-main-div").css("z-index", "99999");
+    $(".sm-nav-main-div").css("backdropFilter", "blur(3px)");
+    $(".sm-nav-main-div").css("background-color", " #2f345b54");
+    msbar(); // Call the existing function
   });
 
+  // Override the msCross function with jQuery addition
+  window.msCross = function () {
+    $(".ms-navbar").css("right", "-60%");
+    $(".ms-nav-icon").css("transition", "right .5s ease");
 
-
-
-
-
-
-
-
-
-
-
-
-
+    // Delay resetting z-index of parent after closing
+    setTimeout(function () {
+      $(".sm-nav-main-div").css("z-index", "0");
+      $(".ms-nav-icon").css("z-index", "99999");
+      $(".sm-nav-main-div").css("backdropFilter", "");
+      $(".sm-nav-main-div").css("background-color", "");
+    }, 500); // Match the transition time
+  };
+});
 
 $(document).ready(function () {
   const detailDivs = $(".services-detail-div");
@@ -129,7 +115,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $(".featured-services-detail-card").on("mouseenter", function () {
+  $(".more-services-card-1").on("mouseenter", function () {
     $(this).css({
       transform: "scale(1.05)",
       "box-shadow": "0 0 10px rgba(242, 204, 116, 0.63)",
@@ -137,7 +123,7 @@ $(document).ready(function () {
     });
   });
 
-  $(".featured-services-detail-card").on("mouseleave", function () {
+  $(".more-services-card-1").on("mouseleave", function () {
     $(this).css({
       transform: "scale(1)",
       "box-shadow": "none",
@@ -146,58 +132,131 @@ $(document).ready(function () {
   });
 });
 
-  $(document).ready(function () {
-    $(".btn-view-more").click(function () {
-      // Show extra cards
-      $(".show-1, .show-2").show();
+function setCardWidths() {
+  let screenWidth = $(window).width();
+  let cardsPerRow;
 
-      // Adjust heights
-      $(".featured-services-div").css("height", "150rem");
-      $(".featured-services-heading-div").css("height", "5%");
-      $(".featured-services-heading-p").css("height", "5%");
-      $(".featured-services-details-div-1").css("height", "22%");
-      $(".featured-services-details-div-2").css("height", "22%");
+  if (screenWidth >= 1440) {
+    // Extra large laptop
+    cardsPerRow = 4;
+  } else if (screenWidth >= 981) {
+    // Large laptop
+    cardsPerRow = 4;
+  } else if (screenWidth >= 769) {
+    // large tablet
+    cardsPerRow = 3;
+  } else if (screenWidth <= 768) {
+    // smart Phone
+    cardsPerRow = 2;
+  } else {
+    // Very small screen fallback
+    cardsPerRow = 1;
+  }
 
-      // Toggle buttons
-      $(".btn-view-more").css("display", "none");
-      $(".btn-view-less").css("display", "flex");
-    });
+  let cardWidthPercent = 100 / cardsPerRow - 4; // 4% total margin
+  $(".more-services-card-1").css({
+    width: cardWidthPercent + "%",
+  });
+}
 
-    $(".btn-view-less").click(function () {
-      // Hide extra cards
-      $(".show-1, .show-2").hide();
+function handleResponsiveCards() {
+  let screenWidth = $(window).width();
+  let visibleCount;
 
-      // Reset heights
-      $(".featured-services-div").css("height", "75rem");
-      $(".featured-services-heading-div").css("height", "6%");
-      $(".featured-services-heading-p").css("height", "6%");
-      $(".featured-services-details-div-1").css("height", "38%");
-      $(".featured-services-details-div-2").css("height", "38%");
+  if (screenWidth >= 1401) {
+    visibleCount = 8; // 4 per row → 2 rows
+  } else if (screenWidth >= 769) {
+    visibleCount = 6; // 3 per row → 2 rows
+  } else {
+    visibleCount = 4; // 2 per row → 2 rows
+  }
 
-      // Toggle buttons
-      $(".btn-view-more").css("display", "flex");
-      $(".btn-view-less").css("display", "none");
-    });
+  // Hide all cards first
+  $(".more-services-card-1").hide().removeClass("extra-card");
+
+  // Show only first visibleCount cards
+  $(".more-services-card-1").each(function (index) {
+    if (index < visibleCount) {
+      $(this).show();
+    } else {
+      $(this).addClass("extra-card");
+    }
   });
 
+  // Hide/show buttons appropriately
+  if ($(".extra-card").length > 0) {
+    $(".view-more-btn").css("display", "flex");
+    $(".less-more-btn").hide();
+  } else {
+    $(".view-more-btn, .less-more-btn").hide();
+  }
+}
 
-
-  $(document).ready(function(){
-      $('.guidance-at-every-step-card-1').mouseenter(function(){
-        $(this).find('.guidance-at-every-step-card-1-icon img').stop(true, true).slideDown();
-        $(this).find('.guidance-at-every-step-card-1-detail').stop(true, true).slideDown();
-        $(this).css('background-color', '#c59c3d');
-        $(this).find('.guidance-at-every-step-card-1-heading').css('color', 'white');
-      });
-
-      $('.guidance-at-every-step-card-1').mouseleave(function(){
-        $(this).find('.guidance-at-every-step-card-1-icon img').stop(true, true).slideUp();
-        $(this).find('.guidance-at-every-step-card-1-detail').stop(true, true).slideUp();
-        $(this).css('background-color', '#f2cd74');
-        $(this).find('.guidance-at-every-step-card-1-heading').css('color', '#2f345b');
-      });
+function setupCardButtons() {
+  $(document).ready(function () {
+    // View More Click
+    $(".view-more-btn button").click(function () {
+      $(".extra-card").slideDown(500);
+      $(".view-more-btn").hide();
+      $(".less-more-btn").css("display", "flex");
     });
 
+    // Less More Click
+    $(".less-more-btn button").click(function () {
+      $(".extra-card").slideUp(500);
+      $(".less-more-btn").hide();
+      $(".view-more-btn").css("display", "flex");
+    });
+  });
+}
+
+// Initial run
+$(document).ready(function () {
+  handleResponsiveCards();
+  setupCardButtons();
+
+  // Recalculate on resize
+  $(window).resize(function () {
+    handleResponsiveCards();
+  });
+});
+
+$(document).ready(function () {
+  $(".guidance-at-every-step-card-1").mouseenter(function () {
+    $(this)
+      .find(".guidance-at-every-step-card-1-icon img")
+      .stop(true, true)
+      .slideDown();
+    $(this)
+      .find(".guidance-at-every-step-card-1-detail")
+      .stop(true, true)
+      .slideDown();
+    $(this).css("background-color", "#c59c3d");
+    $(this)
+      .find(".guidance-at-every-step-card-1-heading")
+      .css("color", "white");
+  });
+
+  $(".guidance-at-every-step-card-1").mouseleave(function () {
+    $(this)
+      .find(".guidance-at-every-step-card-1-icon img")
+      .stop(true, true)
+      .slideUp();
+    $(this)
+      .find(".guidance-at-every-step-card-1-detail")
+      .stop(true, true)
+      .slideUp();
+    $(this).css("background-color", "#f2cd74");
+    $(this)
+      .find(".guidance-at-every-step-card-1-heading")
+      .css("color", "#2f345b");
+  });
+});
+
+
+
+
+// small screen query
 
 
 
@@ -205,9 +264,65 @@ $(document).ready(function () {
 
 
 
+$(document).ready(function () {
+  $(".business-visa-div-sm").click(function () {
+    const parentBox = $(this).closest(".business-visa-heading-detail-box-sm");
+    const detailDiv = parentBox.find(".services-detail-div-sm");
+    const iconImg = $(this).find(".business-visa-icon-div-sm img");
+    const nameDiv = $(this).find(".business-visa-name-div-sm");
+    const viewDetailDiv = $(this).find(".business-visa-view-detail-div-sm");
 
+    // Close others if any is open
+    $(".business-visa-heading-detail-box-sm").not(parentBox).each(function () {
+      const otherDetail = $(this).find(".services-detail-div-sm");
+      if (otherDetail.hasClass("active")) {
+        otherDetail.slideUp(300).removeClass("active");
+        $(this).css("height", "5rem");
+        $(this).find(".business-visa-div-sm").css({
+          height: "80%",
+          backgroundColor: "transparent",
+          boxShadow: "none",
+        });
+        $(this).find(".business-visa-name-div-sm").css("color", "#c59c3d");
+        $(this).find(".business-visa-view-detail-div-sm").css("color", "#c59c3d");
 
+        // Revert icon
+        const originalIcon = $(this).find(".business-visa-div-sm img").attr("src");
+        if (originalIcon.includes("-blue")) {
+          const normalIcon = originalIcon.replace("-blue", "-blue");
+          $(this).find(".business-visa-div-sm img").attr("src", normalIcon);
+        }
+      }
+    });
 
+    // Toggle current
+    if (detailDiv.hasClass("active")) {
+      detailDiv.slideUp(300).removeClass("active");
+      parentBox.css("height", "5rem");
+      $(this).css({
+        height: "80%",
+        backgroundColor: "transparent",
+        boxShadow: "none",
+      });
+      nameDiv.css("color", "#c59c3d");
+      viewDetailDiv.css("color", "#c59c3d");
+    } else {
+      detailDiv.slideDown(300).addClass("active");
+      parentBox.css("height", "30rem");
+      $(this).css({
+        height: "15%",
+        backgroundColor: "#2f345b",
+        boxShadow: "0 0 5px 1px #f2cd74",
+      });
+      nameDiv.css("color", "white");
+      viewDetailDiv.css("color", "white");
 
-
-
+      // Replace icon
+      let currentSrc = iconImg.attr("src");
+      if (currentSrc.includes("-blue")) {
+        let goldenSrc = currentSrc.replace("-blue", "-light-golden");
+        iconImg.attr("src", goldenSrc);
+      }
+    }
+  });
+});
